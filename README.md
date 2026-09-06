@@ -9,11 +9,11 @@ Facebook:https://www.facebook.com/SaPostengapangabuhi/
 
 Final Submission Checklist
 • ☐ Home page works
-• ☐ About Us page works
+• ☐ About Us page works 
 • ☐ Products/Services page works
 • ☐ Gallery page works
 • ☐ Contact Us page works
-• ☐ Navigation works on all pages
+• ☐ Navigation works on all pages -
 • ☐ Images display correctly
 • ☐ CSS is properly linked
 • ☐ Home has a sidebar and background
