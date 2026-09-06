@@ -1,0 +1,160 @@
+/*------------->Themes natin bai para same same color and fonts naton<--------------*/
+:root {
+  --cream:        #FAF4EA;
+  --tan:          #EDE0C8;
+  --tan-line:     #DCC9A3;
+  --coffee:       #3B2A1E;
+  --coffee-dark:  #241813;
+  --terracotta:   #B5552E;
+  --terracotta-dark: #93401F;
+  --sage:         #6E7C55;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Work Sans", Arial, sans-serif;
+
+  --max-width: 1120px;
+  --radius: 6px;
+}
+/*------------------------eto sa taas is like functions na automatic call out for design-------------------------*/
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--coffee);
+}
+
+.wrap { /* for divs, para ang dimensions ng websites is same length sa navbar down to footer*/
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+    color: var(--tan-line);
+}
+
+h2 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    margin: 0 0 0.5em;
+    color: var(--coffee-dark);
+}
+
+p {
+    max-width: 68ch;
+}
+
+.section-dimensions {
+    padding: 64px 0;
+}
+
+
+/*-----------NavBar and Header---------------*/
+
+.header {
+    background: var(--coffee);
+    color: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.header .header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: var(--coffee);
+}
+
+.saposte-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--cream);
+}
+
+.saposte-logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.saposte-logo-text {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+}
+
+.saposte-logo-text span{
+    display: block;
+    color: var(--tan-line);
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--tan-line);
+    font-weight: 400;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: None;
+}
+
+.navbar a {
+    color: var(--tan);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+
+}
+
+/*-----------Footer---------------*/
+
+.footer {
+    background: var(--coffee-dark);
+    color: var(--tan-line);
+    padding: 44px 0 24px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 32px;
+
+}
+
+/*-----------Page Banners------------*/
+.main-banner {
+    background: var(--coffee-dark);
+    color: var(--cream);
+    padding: 48px 0;
+    text-align: left;
+}
+
+.page-banner {
+    background: var(--coffee-dark);
+    color: var(--cream);
+    padding: 48px 0;
+    text-align: left;
+}
+
+.page-banner p {
+    color: var(--tan-line);
+    margin: 0;
+}
+
+/*------- Onwards down below is for the main sections design--------*/
+/*---You can edit naman sa taas if you think may i-change pero keep naming consistent para di malito*/
+
+/*-----------About Page----------*/
