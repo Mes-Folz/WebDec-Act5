@@ -12,19 +12,19 @@ Number:
 
 Final Submission Checklist
 • ☐ Home page works
-• ☐ About Us page works 
+• ☐ About Us page works---------------------------------------yes as of now
 • ☐ Products/Services page works
 • ☐ Gallery page works
-• ☐ Contact Us page works
-• ☐ Navigation works on all pages -
-• ☐ Images display correctly
-• ☐ CSS is properly linked
+• ☐ Contact Us page works ------------------------------------yes as of now
+• ☐ Navigation works on all pages ----------------------------yes as of now
+• ☐ Images display correctly ---------------------------------yes as of now
+• ☐ CSS is properly linked -----------------------------------yes
 • ☐ Home has a sidebar and background
-• ☐ About Us has sufficient text and integrated image
-• ☐ Contact form contains all required input types
-• ☐ Submit and Reset buttons are present
-• ☐ No broken links
-• ☐ No broken images
+• ☐ About Us has sufficient text and integrated image---------yes(?)
+• ☐ Contact form contains all required input types------------yes idk if all all types of input types
+• ☐ Submit and Reset buttons are present----------------------yes
+• ☐ No broken links-------------------------------------------yes for now
+• ☐ No broken images------------------------------------------yes for now
 
 
 Color and Font to Use:

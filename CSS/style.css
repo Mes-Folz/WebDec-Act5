@@ -56,6 +56,10 @@ p {
     padding: 64px 0;
 }
 
+.section-dimensions-tan {
+    background: var(--tan);
+}
+
 .button {
     display: inline-block;
     font-family: var(--font-body);
@@ -174,18 +178,16 @@ p {
 
 /*-----------About Page----------*/
 .about-design1 {
-    justify-content: center;
-    align-items: center;
+    align-items: start;
     display: flex;
     gap: 40px;
 }
 
-.about-design2 {
+.about-design1 .about-design2 p {
     padding: 10px 10px;
-    background: var(--tan-line) ;
-    border-radius: var(--radius);
-    border: 2px solid var(--terracotta);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: var(--cream);
+    margin: 0 0 1.1em;
+    line-height: 1.5;
 }
 
 .about-design1 img {
@@ -199,6 +201,23 @@ p {
 .about-design p {
     margin: 0 0 1.1em;
 }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.about-mvv {
+    background: var(--cream);
+    border-top: 4px solid var(--sage);
+    border-left: 4px solid var(--sage);
+    border-bottom: 2px solid var(--sage);
+    border-right: 2px solid var(--sage);
+    border-radius: var(--radius);
+    padding: 20px;
+}           
 
 /*---------Contact Page------------*/
 
@@ -259,7 +278,7 @@ p {
     color: var(--coffee);
 }
 
-textarea, input[type="text"], input[type="number"], input[type="tel"], input[type="email"] {
+textarea, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], select, input[type="date"], input[type="time"], input[type="password"] {
     width: 100%;
     border: 2px solid var(--tan-line);
     border-radius: var(--radius);
@@ -354,4 +373,19 @@ fieldset legend {
     height: 32px;
     display: block;
     object-fit: contain;
+}
+
+.file-field input[type="file"] {
+    border: 1px dashed var(--tan-line);
+    padding: 14px;
+    background: #fff;
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.input .input-context {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #6b5c4d;
 }

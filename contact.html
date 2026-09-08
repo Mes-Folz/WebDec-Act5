@@ -40,14 +40,28 @@
                     <form class="contacts-form">
                         <div class="form-row">
                             <div class="input">
-                                <label for="fullname">Full Name</label>
-                                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="First Name">
                             </div>
 
+                            <div class="input">
+                                <label for="lastname">Age</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
                             <div class="input">
                                 <label for="age">Age</label>
                                 <input type="number" id="age" name="age" placeholder="Age">
                             </div>
+
+                            <div class="input">
+                                <label for="password">Create a Password
+                                    <span class="input-context">So you can track your inquiry later</span>
+                                </label>
+                            <input type="password" id="password" name="password" minlength="8">
+                             </div>
                         </div>
                         
                         <div class="form-row">
@@ -62,6 +76,18 @@
                             </div>
                         </div>
 
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="visit-date">Preferred Visit Date</label>
+                                <input type="date" id="visit-date" name="visit-date">
+                            </div>
+
+                            <div class="input">
+                                <label for="visit-time">Preferred Visit Time</label>
+                                <input type="time" id="visit-time" name="visit-time">
+                            </div>
+                        </div>
+
                         <fieldset>
                             <legend>What is your Inquiry?</legend>
                             <div class="choices">
@@ -72,9 +98,36 @@
                             </div>
                         </fieldset>
 
+                        <fieldset>
+                            <legend>How did you hear about us?</legend>
+                            <div class="choices">
+                                <label><input type="radio" name="source" value="facebook" checked> Facebook</label>
+                                <label><input type="radio" name="source" value="instagram"> Instagram</label>
+                                <label><input type="radio" name="source" value="friend"> Friend / Family</label>
+                                <label><input type="radio" name="source" value="walkin"> Just walked in</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="input">
+                            <label for="branch">Branch</label>
+                                <select id="branch" name="branch">
+                                    <option value="jaro">Jaro</option>
+                                    <option value="molo">Molo</option>
+                                    <option value="pavia">Pavia</option>
+                                    <option value="c1">C1</option>
+                                </select>
+                        </div>
+
                         <div class="input">
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" placeholder="What do you need erp?"></textarea>
+                        </div>
+
+                        <div class="input file-field">
+                            <label for="attachment">Attach a File (optional)
+                                <span class="input-context">E.g. a reference photo for a bulk order</span>
+                            </label>
+                            <input type="file" id="attachment" name="attachment">
                         </div>
 
                         <div class="form-buttons">
