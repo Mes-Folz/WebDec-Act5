@@ -69,3 +69,38 @@
     background: var(--coffee);
     color: var(--cream);
 }
+
+/*-----------Menu Section---------------*/
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    color: var(--terracotta-dark);
+    border-bottom: 2px solid var(--terracotta);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--tan-line);
+}
+
+.menu-item-name {
+    font-weight: 600;
+}
+
+.menu-item-price {
+    color: var(--coffee-dark);
+    font-weight: 600;
+}
