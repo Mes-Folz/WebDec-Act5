@@ -155,10 +155,34 @@ p {
 
 /*-----------Page Banners------------*/
 .main-banner {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 960 / 251.5;
     background: var(--coffee-dark);
     color: var(--cream);
-    padding: 48px 0;
+    display: flex;
+    align-items: center;
     text-align: left;
+}
+
+.main-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(36, 24, 19, 0.45);
+}
+
+.main-banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.main-banner .wrap {
+    position: relative;
+    z-index: 1;
 }
 
 .page-banner {
@@ -388,4 +412,169 @@ fieldset legend {
   font-weight: 400;
   font-size: 0.8rem;
   color: #6b5c4d;
+}
+
+/*----------------Home Page-----------------*/
+
+.short-intro {
+
+}
+
+.intro-pics {
+
+}
+
+.fun-fact {
+
+}
+
+/*-----------Gallery Page---------------*/
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-box {
+    width: 240px;
+    background: var(--tan);
+    border: 2px solid var(--terracotta);
+    border-radius: var(--radius);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.gallery-box p {
+    margin: 8px 0 0;
+    font-weight: 600;
+}
+
+/*-----------Products Page---------------*/
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.product-box {
+    width: 240px;
+    background: var(--cream);
+    border: 2px solid var(--tan-line);
+    border-radius: var(--radius);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.product-box img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid var(--tan-line);
+    padding: 10px;
+    text-align: left;
+}
+
+.price-table th {
+    background: var(--coffee);
+    color: var(--cream);
+}
+
+/*-----------Menu Section---------------*/
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    color: var(--terracotta-dark);
+    border-bottom: 2px solid var(--terracotta);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--tan-line);
+}
+
+.menu-item-name {
+    font-weight: 600;
+}
+
+.menu-item-price {
+    color: var(--coffee-dark);
+    font-weight: 600;
+}
+
+/*-----------Menu Page---------------*/
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.menu-card {
+    width: 280px;
+    background: var(--tan);
+    border: 2px solid var(--terracotta);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card-info {
+    padding: 14px;
+}
+
+.menu-card-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.menu-card-price {
+    color: var(--terracotta-dark);
+}
+
+.menu-card-desc {
+    font-size: 0.9rem;
+    margin: 0;
 }
