@@ -34,6 +34,13 @@ body {
     padding: 0 24px;
 }
 
+.wrap-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 20px;
+}
+
 h1 {
     font-family: var(--font-display);
     line-height: 1.2;
@@ -302,6 +309,28 @@ p {
     color: var(--coffee);
 }
 
+.menu-button {
+    background: var(--);
+    border: 2px solid var(--tan-line);
+    color: var(--terracotta);
+}
+
+.about-button {
+    background: var(--terracotta);
+    color: var(--cream);
+}
+
+.gallery-button {
+    background: var(--terracotta);
+    color: var(--cream);
+}
+
+.contact-button {
+    background: transparent;
+    border: 2px solid var(--tan-line);
+    color: var(--terracotta);
+}
+
 textarea, input[type="text"], input[type="number"], input[type="tel"], input[type="email"], select, input[type="date"], input[type="time"], input[type="password"] {
     width: 100%;
     border: 2px solid var(--tan-line);
@@ -339,7 +368,6 @@ fieldset legend {
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
-
 }
 
 .socials {
@@ -417,15 +445,149 @@ fieldset legend {
 /*----------------Home Page-----------------*/
 
 .short-intro {
-
+    align-items: start;
+    display: flex;
 }
 
-.intro-pics {
-
+.short-intro p {
+    padding: 10px 10px;
+    background: var(--tan);
+    margin: 0 0 1.1em;
+    line-height: 1.5;
 }
 
-.fun-fact {
+.intro-pics img {
+    width: 380px;
+    height: 320px;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+    padding: 5px;
+}
 
+.fun-fact p {
+    font-family: var(--font-body);
+}
+
+.section2-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.short-intro-grid {
+    grid-column: 1;
+}
+
+.contact-home {
+    grid-column: 2;
+}
+
+/*---------------Side Bar Home---------------*/
+.sidebar-layout {
+    position: relative;
+    z-index: 30;
+}
+
+.sidebar-wrapper {
+    background: var(--tan);
+    width: 300px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    border: 5px solid var(--tan-line);
+    box-shadow: 4px 0 14px rgba(59, 42, 30, 0.16);
+}
+
+.sidebar-wrapper h2 {
+    position: relative;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: var(--font-display);
+    padding: 20px 18px;
+    border-bottom: 2px solid var(--tan-line);
+}
+
+.sidebar-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 16px 18px;
+}
+
+.sidebar-wrapper ul + ul {
+    border-top: 2px solid var(--tan-line);
+    padding-top: 18px;
+}
+
+.sidebar-wrapper li + li {
+    margin-top: 9px;
+}
+
+.sidebar-wrapper a {
+    position: relative;
+    display: block;
+    color: var(--coffee);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 40px 14px 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--tan-line);
+    background: rgba(250, 244, 234, 0.48);
+    text-decoration: none;
+    font-family: var(--font-body);
+    box-shadow: 0 2px 0 rgba(59, 42, 30, 0.06);
+}
+
+.sidebar-layout input {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar-wrapper h2 > label {
+    display: none;
+}
+
+.sidebar-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 18px;
+    left: 295px;
+    width: 58px;
+    height: 52px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    background: var(--tan);
+    color: var(--coffee);
+    font-size: 1.7rem;
+    line-height: 1;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border-top: 5px solid var(--tan-line);
+    border-right: 5px solid var(--tan-line);
+    border-bottom: 5px solid var(--tan-line);
+    border-left: 5px solid var(--tan);
+    box-shadow: 5px 3px 10px rgba(59, 42, 30, 0.12);
+    transition: left 0.3s ease-in-out, background-color 0.2s ease;
+}
+
+.sidebar-layout input:focus-visible ~ .sidebar-toggle {
+    outline: 3px solid var(--terracotta);
+    outline-offset: 3px;
+}
+
+.sidebar-layout input:checked ~ .sidebar-wrapper {
+    left: -300px;
+}
+
+.sidebar-layout input:checked ~ .sidebar-toggle {
+    left: 0;
 }
 
 /*-----------Gallery Page---------------*/
