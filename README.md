@@ -1,6 +1,7 @@
 # WebDec-Act5
 Create a WebSite for a Real-Life Business
 
+Details:
 Iloilo Business: Sa Poste Café - Del Carmen Jaro
 
 Links:
@@ -13,21 +14,23 @@ Number:
 Final Submission Checklist
 • ☐ Home page works
 • ☐ About Us page works---------------------------------------yes as of now
-• ☐ Products/Services page works
-• ☐ Gallery page works
+• ☐ Products/Services page works------------------------------yes
+• ☐ Gallery page works----------------------------------------yes
 • ☐ Contact Us page works ------------------------------------yes as of now
 • ☐ Navigation works on all pages ----------------------------yes as of now
 • ☐ Images display correctly ---------------------------------yes as of now
 • ☐ CSS is properly linked -----------------------------------yes
-• ☐ Home has a sidebar and background
+• ☐ Home has a sidebar and background-------------------------yes
 • ☐ About Us has sufficient text and integrated image---------yes(?)
-• ☐ Contact form contains all required input types------------yes idk if all all types of input types
+• ☐ Contact form contains all required input types------------yes
 • ☐ Submit and Reset buttons are present----------------------yes
 • ☐ No broken links-------------------------------------------yes for now
 • ☐ No broken images------------------------------------------yes for now
 
 
 Color and Font to Use:
+
+Ps: nag ask lang ko kay chatgpt ng color pallete and fonts to use
 :root {
   --cream:        #FAF4EA;
   --tan:          #EDE0C8;
