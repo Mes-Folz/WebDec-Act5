@@ -158,6 +158,11 @@ p {
     border-bottom-color: var(--terracotta);
 }
 
+.header-container .rightSide{
+    display:flex;
+    gap: 30px;
+}
+
 
 
 /*-----------Footer---------------*/
