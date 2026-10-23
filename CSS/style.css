@@ -160,7 +160,21 @@ p {
 
 .header-container .rightSide{
     display:flex;
+    align-items: center;
     gap: 30px;
+}
+
+.schemeToggle{
+    font-size: 1.25rem;
+    width:55px;
+    padding:1px;
+    border-radius:10px;
+    border:2px solid var(--gray);
+    background-color: var(--white);
+    text-align:left;
+    &::after{
+        content: "☀️";
+    }
 }
 
 
@@ -861,6 +875,15 @@ fieldset legend {
 body.darkMode{
     background-color: var(--gray);
     color: var(--white);
+
+    & .schemeToggle{
+        background-color: var(--gray);
+        border-color: var(--black);
+        text-align:right;
+        &::after{
+            content: "🌙";
+        }
+    }
 
     & .section-dimensions-tan, .section-dimensions-tan p, .price-table tr:nth-child(even) td{
         background-color: var(--black);
