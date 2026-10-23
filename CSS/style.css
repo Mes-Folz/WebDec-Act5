@@ -857,19 +857,37 @@ body.darkMode{
     background-color: var(--gray);
     color: var(--white);
 
-    & .menu-card, aside, aside > .socials, .sidebar-toggle{
-        background-color: var(--gray);
-    }
-
-    & #sidebar-story, #sidebar-story p{
+    & .section-dimensions-tan, .section-dimensions-tan p, .price-table tr:nth-child(even) td{
         background-color: var(--black);
     }
 
-    & .menu-card-price{
+    & .menu-card, 
+    aside, aside > .socials, 
+    .sidebar-toggle, 
+    .about-design2 > p, 
+    .about-mvv, .about-mvv > p,
+    .gallery-box,
+    .contacts-form,
+    .contacts-form input,
+    .contacts-form select,
+    .contacts-form textarea{
+        background-color: var(--gray);
+    }
+
+    & .gallery-section{
+        background: linear-gradient(to bottom, var(--gray) 0 260px, var(--black) 260px 100%);
+    }
+
+    & .menu-card-price, .price-table td:last-child, .input-context{
         color: var(--tan);
     }
 
-    & dd, dt, h3{
+    & dd, dt, h3, 
+    .gallery-box > p,
+    .contacts-form input,
+    .contacts-form select,
+    .contacts-form textarea,
+    .reset-button{
         color: var(--cream);
     }
 
