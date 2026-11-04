@@ -1,12 +1,12 @@
 # Mesiah — final project tasks
 
-## Ownership: contact, documentation, and deployment coordination
+## Ownership: contact, documentation, and presentation coordination
 
 - [ ] Revamp `contact.html` using the Contact frame; include verified address, contact details, hours, and a directions link where appropriate.
 - [ ] Implement JavaScript validation for required fields and formats with useful accessible feedback. Clearly label a demonstration form and do not claim a message was sent unless it really was.
 - [ ] Assemble the project report: business profile, rationale, audience, design choices, pages, JavaScript features, technologies, testing, deployment URL, sources, and AI acknowledgments.
 - [ ] Coordinate desktop and mobile screenshots and a team review of all pages, links, assets, and interactions.
-- [ ] Coordinate accessible GitHub repository and static Vercel deployment; verify the public URL, every page and feature, and redeploy and recheck after changes.
+- [ ] Coordinate the accessible GitHub repository and help Francis check the public site after deployment.
 - [ ] Organize the live demonstration: business and audience, pages, four interactions, responsive layouts, code, GitHub, Vercel, challenges, and improvements.
 
 Coordinate verified details with Kurt and gather each member’s feature explanation and sources.
@@ -28,7 +28,7 @@ Design references: [Contact](https://www.figma.com/design/EvxbbSLl3QDe9PZmQImDUu
 - [ ] Collect Kurt's preliminary business output. Write the report with the business profile, rationale, audience, visual decisions, page purposes, JavaScript features and technology stack.
 - [ ] Record tests performed, the live URL, and references for images, icons, fonts and AI assistance. Collect each teammate's contributions and source credits.
 - [ ] Capture desktop and mobile screenshots. Coordinate an instructor-accessible GitHub repository with complete source, working paths, no unnecessary files and no exposed secrets.
-- [ ] Coordinate importing the repository into Vercel as a static site. Check the public URL without login, including every page, link, image, interaction and responsive layout. Keep it accessible during evaluation; redeploy and recheck after changes.
+- [ ] Get the public Vercel URL from Francis and help check every page, link, image, interaction and responsive layout without logging in. Record the results in the report.
 - [ ] Prepare the live demonstration: business and audience, required pages and additional pages, at least four working interactions, desktop and mobile layouts, code, GitHub, Vercel, challenges and improvements. Rehearse with the group.
 - [ ] Collect the final deliverables: Vercel URL, GitHub repository, project report, screenshots and live demonstration.
 

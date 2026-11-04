@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="250" height="32" viewBox="0 0 250 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Cup rim">
+<path d="M250 16C250 24.8366 194.036 32 125 32C55.9644 32 0 24.8366 0 16C0 7.16344 55.9644 0 125 0C194.036 0 250 7.16344 250 16Z" fill="#FFF8E6" fill-opacity="0.0745098"/>
+<mask id="stroke0_0_7" fill="white">
+<path d="M250 16C250 24.8366 194.036 32 125 32C55.9644 32 0 24.8366 0 16C0 7.16344 55.9644 0 125 0C194.036 0 250 7.16344 250 16Z"/>
+</mask>
+<path d="M250 16C250 24.8366 194.036 32 125 32C55.9644 32 0 24.8366 0 16C0 7.16344 55.9644 0 125 0C194.036 0 250 7.16344 250 16Z" stroke-width="8" stroke="#FFFCEF" stroke-opacity="0.870588" mask="url(#stroke0_0_7)"/>
+</g>
+</svg>

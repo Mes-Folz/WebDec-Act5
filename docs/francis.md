@@ -12,6 +12,12 @@
 
 Coordinate product data and links with Fritz and overall styles with Ace.
 
+## Vercel hosting
+
+- [ ] Import the team's GitHub repository into Vercel and deploy it as a static website.
+- [ ] Confirm that the public URL opens without a login and that the home page, internal links and assets work. Share the URL with the team and Mesiah for the report.
+- [ ] Coordinate live checks of every page, interaction and responsive layout with the team. Redeploy and recheck after changes, and keep the site accessible during evaluation.
+
 ## Detailed implementation
 
 Design references: [Order](https://www.figma.com/design/EvxbbSLl3QDe9PZmQImDUu/Sa-Poste-redesign?node-id=26-4639), [drink storyboard](https://www.figma.com/design/EvxbbSLl3QDe9PZmQImDUu/Sa-Poste-redesign?node-id=26-4980), and [dark Order](https://www.figma.com/design/EvxbbSLl3QDe9PZmQImDUu/Sa-Poste-redesign?node-id=54-1072).
