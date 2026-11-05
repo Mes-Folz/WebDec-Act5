@@ -9,9 +9,35 @@ const list = document.querySelector('#drink-list');
 const items = [];
 let drink = drinks[0];
 let quantity = 1;
+const stage = document.querySelector('.stage');
+const canvas = document.createElement('canvas');
+canvas.className = 'coffee-scene';
+canvas.setAttribute('aria-hidden', 'true');
+stage.append(canvas);
+const coffeeScene = window.createCoffeeScene?.(canvas);
+if (coffeeScene) stage.classList.add('has-webgl');
+canvas.addEventListener('coffee-scene-unavailable', () => stage.classList.remove('has-webgl'));
 const money = value => `₱${value}`;
 const selected = name => form.elements[name].value;
 const unitPrice = () => drink.price + (selected('size') === 'Large' ? 20 : 0) + (form.elements.shot.checked ? 20 : 0) + (form.elements.oat.checked ? 25 : 0);
+const addButton = form.querySelector('[type="submit"]');
+const orderBag = document.querySelector('.bag');
+let feedbackTimer;
+
+function confirmOrder() {
+  clearTimeout(feedbackTimer);
+  addButton.classList.remove('order-added');
+  orderBag.classList.remove('bag-added');
+  void addButton.offsetWidth;
+  addButton.firstElementChild.textContent = '✓';
+  addButton.classList.add('order-added');
+  orderBag.classList.add('bag-added');
+  feedbackTimer = setTimeout(() => {
+    addButton.classList.remove('order-added');
+    orderBag.classList.remove('bag-added');
+    addButton.firstElementChild.textContent = '＋';
+  }, 850);
+}
 
 function renderDrinks() {
   list.innerHTML = '';
@@ -40,6 +66,7 @@ function update() {
   document.querySelector('#stage-summary').textContent = `${selected('size')} CUP / ${selected('ice')} / ${selected('sweet')} SWEET`.toUpperCase();
   const cubes = document.querySelectorAll('.cube');
   cubes.forEach((cube, i) => { cube.hidden = selected('ice') === 'Less ice' ? i > 0 : selected('ice') === 'Regular ice' ? i > 2 : false; });
+  coffeeScene?.update({ ice: selected('ice'), sweet: selected('sweet'), drink: drink.name, size: selected('size'), shot: form.elements.shot.checked, oat: form.elements.oat.checked });
 }
 
 function renderOrder() {
@@ -78,6 +105,7 @@ form.addEventListener('submit', event => {
   items.push({ name: drink.name, price: unitPrice(), quantity, coffee: true, description: [selected('size'), selected('ice'), `${selected('sweet')} sweet`, ...extras, note && `Note: ${note}`].filter(Boolean).join(' · ') });
   renderOrder();
   document.querySelector('#summary-status').textContent = '✓ Added to your demonstration order.';
+  confirmOrder();
 });
 document.querySelector('#minus').addEventListener('click', () => { quantity = Math.max(1, quantity - 1); update(); });
 document.querySelector('#plus').addEventListener('click', () => { quantity = Math.min(99, quantity + 1); update(); });
