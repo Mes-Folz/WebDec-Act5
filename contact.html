@@ -3,180 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sa Poste Cafe | Contacts</title>
+    <title>Contact | Sa Poste Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
 </head>
-    <body>
-        <header class="header">
-            <div class="header-container">
-                <a class="saposte-logo" href="index.html">
-                    <img src="./Images/SaPosteCafeLogo.jpg" alt="Sa Poste Cafe Logo">
-                    <span class="saposte-logo-text">Sa Poste Cafe</span>
-                </a>
-
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a class="active" href="contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
+<body>
+    <header class="contact-header">
+        <div class="topbar">
+            <a class="brand" href="index.html">
+                <img src="./Images/order/cba26.png" alt="Sa Poste Café">
+                <span>NEIGHBORHOOD<br>COFFEE &amp; COMPANY</span>
+            </a>
+            <button class="mobile-menu" type="button" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
+            <nav class="top-navigation" id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="contact.html" aria-current="page">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme">☾</button>
+                <a class="order-now" href="order.html"><img src="./Images/contact/shopping-bag.svg" alt="">Order Now</a>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <section class="page-banner">
-                <div class="wrap">
-                    <h1>Contact Us</h1>
-                    <p>We'd love to hear from you! Reach out to us for any inquiries or feedback.</p>
+        <section class="contact-hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="hero-eyebrow">GET IN TOUCH</p>
+                <h1 id="hero-title">Say<br>Hello.</h1>
+                <p class="hero-tagline">“Kaon, Inom Kag Mag-Move-On!”</p>
+            </div>
+            <div class="hero-facts" aria-label="Sa Poste Café facts">
+                <div class="hero-fact">
+                    <strong>4</strong>
+                    <span>BRANCHES</span>
                 </div>
-            </section>
+                <div class="hero-fact">
+                    <strong>10AM</strong>
+                    <span>OPEN DAILY</span>
+                </div>
+                <div class="hero-fact">
+                    <strong>2AM</strong>
+                    <span>CLOSES LATE</span>
+                </div>
+            </div>
+        </section>
 
-            <section class="section-dimensions">
-                <div class="wrap contacts-layout">
+        <div class="marquee-band" aria-label="Sa Poste Café locations">
+            <div class="marquee-content">
+                <span>REACH OUT</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>JARO</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>MOLO</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>PAVIA</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>C1 ROAD</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>SA POSTE CAFÉ</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>ILOILO CITY</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>REACH OUT</span><img src="./Images/contact/marquee-dot.svg" alt="">
+                <span>JARO</span>
+            </div>
+        </div>
+    </header>
 
-                    <form class="contacts-form">
-                        <div class="form-row">
-                            <div class="input">
-                                <label for="firstname">First Name</label>
-                                <input type="text" id="firstname" name="firstname" placeholder="First Name">
-                            </div>
+    <main>
+        <section class="contact-main" aria-label="Find us and send a message">
+            <div class="info-column">
+                <div class="section-heading">
+                    <p class="section-kicker">01 / FIND US</p>
+                    <h2>Come see<br>us here.</h2>
+                    <p class="section-subtitle">The neighborhood awaits.</p>
+                </div>
 
-                            <div class="input">
-                                <label for="lastname">Last Name</label>
-                                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-                            </div>
+                <div class="storefront-postcard">
+                    <img src="./Images/contact/storefront.png" alt="Sa Poste Café storefront">
+                </div>
+
+                <aside class="info-card" aria-labelledby="branch-title">
+                    <p class="card-eyebrow"><img src="./Images/contact/branch-status.svg" alt=""> FLAGSHIP BRANCH</p>
+                    <h3 id="branch-title">Sa Poste Café · Jaro</h3>
+                    <div class="card-divider"></div>
+                    <dl class="branch-details">
+                        <div>
+                            <dt>ADDRESS</dt>
+                            <dd>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</dd>
+                            <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=KL+Building%2C+Del+Carmen+Street%2C+Barangay+Javellana%2C+Jaro%2C+Iloilo+City" target="_blank" rel="noopener noreferrer">Get directions ↗</a></dd>
                         </div>
-
-                        <div class="form-row">
-                            <div class="input">
-                                <label for="age">Age</label>
-                                <input type="number" id="age" name="age" placeholder="Age">
-                            </div>
-
-                            <div class="input">
-                                <label for="password">Create a Password
-                                    <span class="input-context">So you can track your inquiry later</span>
-                                </label>
-                            <input type="password" id="password" name="password" minlength="8">
-                             </div>
+                        <div>
+                            <dt>NUMBER</dt>
+                            <dd><a href="tel:+639304077838">0930 407 7838</a></dd>
                         </div>
-                        
-                        <div class="form-row">
-                            <div class="input">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Email">
-                            </div>
-
-                            <div class="input">
-                                <label for="number">Phone Number</label>
-                                <input type="tel" id="number" name="number" placeholder="09XX XXX XXXX">
-                            </div>
+                        <div>
+                            <dt>EMAIL</dt>
+                            <dd><a href="mailto:saposte888@gmail.com">saposte888@gmail.com</a></dd>
                         </div>
-
-                        <div class="form-row">
-                            <div class="input">
-                                <label for="visit-date">Preferred Visit Date</label>
-                                <input type="date" id="visit-date" name="visit-date">
-                            </div>
-
-                            <div class="input">
-                                <label for="visit-time">Preferred Visit Time</label>
-                                <input type="time" id="visit-time" name="visit-time">
-                            </div>
+                        <div>
+                            <dt>HOURS</dt>
+                            <dd>Open daily · 10:00 AM – 2:00 AM</dd>
                         </div>
-
-                        <fieldset>
-                            <legend>What is your Inquiry?</legend>
-                            <div class="choices">
-                                <label><input type="checkbox" name="inquiry">Menu List</label>
-                                <label><input type="checkbox" name="inquiry">Bulk Order</label>
-                                <label><input type="checkbox" name="inquiry">Franchise Inquiry</label>
-                                <label><input type="checkbox" name="inquiry">Feedback</label>
-                            </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>How did you hear about us?</legend>
-                            <div class="choices">
-                                <label><input type="radio" name="source" value="facebook" checked> Facebook</label>
-                                <label><input type="radio" name="source" value="instagram"> Instagram</label>
-                                <label><input type="radio" name="source" value="friend"> Friend / Family</label>
-                                <label><input type="radio" name="source" value="walkin"> Just walked in</label>
-                            </div>
-                        </fieldset>
-
-                        <div class="input">
-                            <label for="branch">Branch</label>
-                                <select id="branch" name="branch">
-                                    <option value="jaro">Jaro</option>
-                                    <option value="molo">Molo</option>
-                                    <option value="pavia">Pavia</option>
-                                    <option value="c1">C1</option>
-                                </select>
+                    </dl>
+                    <div class="card-divider"></div>
+                    <div class="social-links">
+                        <p>FOLLOW OUR PAGES</p>
+                        <div>
+                            <a href="https://www.facebook.com/SaPostengapangabuhi/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                            <a href="https://www.instagram.com/saposte.iloilo" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
                         </div>
-
-                        <div class="input">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" placeholder="What do you need erp?"></textarea>
-                        </div>
-
-                        <div class="input file-field">
-                            <label for="attachment">Attach a File (optional)
-                                <span class="input-context">E.g. a reference photo for a bulk order</span>
-                            </label>
-                            <input type="file" id="attachment" name="attachment">
-                        </div>
-
-                        <div class="form-buttons">
-                            <button type="submit" class="button submit-button">Submit Form</button>
-                            <button type="reset" class="button reset-button">Reset Form</button>
-                        </div>
-
-                    </form>
-
-                    <div class="contact-info-layout">
-
-                        <div class="contacts-title">
-                            <h1>Customer Inquiries</h1>
-                        </div>
-
-                        <aside class="contact-info">
-                            <h3>Sa Poste Cafe - Jaro</h3>
-                            <dl>
-                                <dt>Address</dt>
-                                <dd>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</dd>
-
-                                <dt>Number</dt>
-                                <dd>0930 407 7838</dd>
-
-                                <dt>Email</dt>
-                                <dd><a href="mailto:saposte888@gmail.com">saposte888@gmail.com</a></dd>
-
-                                <dt>Opening & Closing Time</dt>
-                                <dd>Open daily from 10:00 AM to 2:00 AM</dd>
-                            </dl>
-
-                            <h3>Follow Our Pages</h3>
-                            <ul class="socials">
-                                <li><a href="https://www.instagram.com/saposte.iloilo?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="><img src="./Images/instagram.svg"></a></li>
-                                <li><a href="https://www.facebook.com/SaPostengapangabuhi/"><img src="./Images/facebook.svg"></a></li>
-                            </ul>
-                        </aside>
                     </div>
+                </aside>
+
+                <div class="neighborhood-note">
+                    <img src="./Images/contact/directions-leaf.svg" alt="">
+                    <p>Rooted in the neighborhood since day one.</p>
                 </div>
-            </section>
 
-
-        </main>
-
-        <footer class="footer">
-            <div class="wrap footer-container">
-                <p>2026 Sa Poste Cafe. All rights reserved.</p>
+                <div class="other-branches">
+                    <p class="section-kicker">OTHER BRANCHES</p>
+                    <ul>
+                        <li><img src="./Images/contact/branch-dot.svg" alt="">Molo</li>
+                        <li><img src="./Images/contact/branch-dot.svg" alt="">Pavia</li>
+                        <li><img src="./Images/contact/branch-dot.svg" alt="">C1 Road</li>
+                    </ul>
+                </div>
             </div>
-        </footer>
 
-    </body>
+            <div class="form-column">
+                <div class="section-heading form-heading">
+                    <p class="section-kicker">02 / SEND A MESSAGE</p>
+                    <h2>Customer<br>Inquiries.</h2>
+                    <p>We'd love to hear from you! Reach out for any inquiries or feedback.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="contact-field">
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" name="firstname" type="text" autocomplete="given-name" placeholder="First Name" minlength="2" required aria-describedby="firstname-error">
+                            <span class="field-error" id="firstname-error" hidden></span>
+                        </div>
+                        <div class="contact-field">
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" name="lastname" type="text" autocomplete="family-name" placeholder="Last Name" minlength="2" required aria-describedby="lastname-error">
+                            <span class="field-error" id="lastname-error" hidden></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="contact-field">
+                            <label for="age">Age</label>
+                            <input id="age" name="age" type="number" inputmode="numeric" min="13" max="120" placeholder="Age" aria-describedby="age-error">
+                            <span class="field-error" id="age-error" hidden></span>
+                        </div>
+                        <div class="contact-field">
+                            <label for="password">Create a Password</label>
+                            <small class="field-hint">Demo only. Do not use a real password.</small>
+                            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="••••••••" aria-describedby="password-error">
+                            <span class="field-error" id="password-error" hidden></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="contact-field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" required aria-describedby="email-error">
+                            <span class="field-error" id="email-error" hidden></span>
+                        </div>
+                        <div class="contact-field">
+                            <label for="number">Phone Number</label>
+                            <input id="number" name="number" type="tel" autocomplete="tel" inputmode="tel" placeholder="09XX XXX XXXX" aria-describedby="number-error">
+                            <span class="field-error" id="number-error" hidden></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="contact-field">
+                            <label for="visit-date">Preferred Visit Date</label>
+                            <input id="visit-date" name="visit-date" type="date" aria-describedby="visit-date-error">
+                            <span class="field-error" id="visit-date-error" hidden></span>
+                        </div>
+                        <div class="contact-field">
+                            <label for="visit-time">Preferred Visit Time</label>
+                            <input id="visit-time" name="visit-time" type="time" aria-describedby="visit-time-error">
+                            <span class="field-error" id="visit-time-error" hidden></span>
+                        </div>
+                    </div>
+
+                    <fieldset class="choice-fieldset" aria-describedby="inquiry-error">
+                        <legend><img src="./Images/contact/fieldset-dot.svg" alt="">What is your Inquiry?<span class="sr-only"> Required.</span></legend>
+                        <div class="choice-list inquiry-options">
+                            <label><input type="checkbox" name="inquiry" value="menu"><span>Menu List</span></label>
+                            <label><input type="checkbox" name="inquiry" value="bulk-order"><span>Bulk Order</span></label>
+                            <label><input type="checkbox" name="inquiry" value="franchise" checked><span>Franchise Inquiry</span></label>
+                            <label><input type="checkbox" name="inquiry" value="feedback"><span>Feedback</span></label>
+                        </div>
+                        <span class="field-error" id="inquiry-error" hidden></span>
+                    </fieldset>
+
+                    <fieldset class="choice-fieldset" aria-describedby="source-error">
+                        <legend><img src="./Images/contact/fieldset-dot.svg" alt="">How did you hear about us?</legend>
+                        <div class="choice-list source-options">
+                            <label><input type="radio" name="source" value="facebook" checked><span>Facebook</span></label>
+                            <label><input type="radio" name="source" value="instagram"><span>Instagram</span></label>
+                            <label><input type="radio" name="source" value="friend"><span>Friend / Family</span></label>
+                            <label><input type="radio" name="source" value="walkin"><span>Just walked in</span></label>
+                        </div>
+                        <span class="field-error" id="source-error" hidden></span>
+                    </fieldset>
+
+                    <div class="contact-field branch-field">
+                        <label for="branch">Branch</label>
+                        <div class="select-control">
+                            <select id="branch" name="branch">
+                                <option value="jaro">Jaro</option>
+                                <option value="molo">Molo</option>
+                                <option value="pavia">Pavia</option>
+                                <option value="c1">C1</option>
+                            </select>
+                            <img src="./Images/contact/chevron.svg" alt="" aria-hidden="true">
+                        </div>
+                    </div>
+
+                    <div class="contact-field message-field">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="What do you need erp?" minlength="10" maxlength="1000" required aria-describedby="message-help message-error"></textarea>
+                        <small class="field-hint sr-only" id="message-help">Please include at least 10 characters (up to 1,000).</small>
+                        <span class="field-error" id="message-error" hidden></span>
+                    </div>
+
+                    <div class="contact-field file-field">
+                        <label for="attachment">Attach a File (optional)</label>
+                        <small class="field-hint">E.g. a reference photo for a bulk order.</small>
+                        <input id="attachment" name="attachment" type="file" aria-describedby="attachment-help">
+                        <span class="sr-only" id="attachment-help">Optional. This demonstration form does not upload or save attachments.</span>
+                    </div>
+
+                    <div class="form-divider"></div>
+                    <div class="form-actions">
+                        <button class="submit-button" type="submit">Submit Form</button>
+                        <button class="reset-button" type="reset">Reset Form</button>
+                        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"><img src="./Images/contact/success-leaf.svg" alt="">Demo form only; nothing is sent or saved.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="photo-banner" aria-label="Same red counter, same warm welcome">
+            <div class="photo-banner-copy">
+                <h2>Same red counter.<br>Same warm welcome.</h2>
+                <p>Sa Poste Café · Jaro · KL Building, Del Carmen Street</p>
+            </div>
+            <div class="photo-seal" aria-hidden="true">
+                <img src="./Images/order/cba26.png" alt="">
+                <span>SA POSTE CAFÉ</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact-footer">
+        <div class="footer-main">
+            <div class="footer-postcard">
+                <img src="./Images/contact/storefront-postcard.png" alt="Sa Poste Café storefront">
+            </div>
+            <div class="footer-copy">
+                <p class="footer-eyebrow">SAME RED COUNTER. SAME WARM WELCOME.</p>
+                <h2>From our counter,<br>to your everyday.</h2>
+                <p class="footer-tagline">“Kaon, Inom Kag Mag-Move-On!”</p>
+                <div class="footer-address">
+                    <p>Sa Poste Café · Jaro</p>
+                    <p>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</p>
+                    <p>Daily · 10:00 AM – 2:00 AM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Sa Poste Café. Good coffee. Better company.</p>
+            <nav aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="contact.html" aria-current="page">Contact</a>
+            </nav>
+            <p><a href="https://www.instagram.com/saposte.iloilo">Instagram ↗</a><a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook ↗</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/contact.js"></script>
+</body>
 </html>
