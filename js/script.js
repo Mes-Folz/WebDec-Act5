@@ -6,9 +6,17 @@ menu.addEventListener("click", () => {
     menu.setAttribute("aria-expanded", String(open));
 });
 
-const theme = document.querySelector("#theme");
-theme.addEventListener("click", () => {
+function changeTheme(){
     const dark = document.body.classList.toggle("dark");
+    localStorage.setItem("scheme", dark ? "dark" : "light");
     theme.textContent = dark ? "☀" : "☾";
     theme.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
-});
+}
+
+const theme = document.querySelector("#theme");
+theme.addEventListener("click", changeTheme);
+
+
+if(localStorage.getItem("scheme") == "dark"){
+    changeTheme();
+}
