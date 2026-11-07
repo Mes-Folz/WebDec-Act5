@@ -11,12 +11,11 @@
     --accent:#9d160f;
     --ink: #352117;
     --line: #dccab5;
-    --bg: var(--cream);
 }
 
 body {
     margin: 0;
-    background: var(--bg);
+    background-color: var(--cream);
     color: var(--ink);
     font-family: Inter, Arial, sans-serif;
     font-size: 14px;
@@ -129,6 +128,13 @@ a {
     font-size: 13px;
 }
 
+@media (max-width:880px){
+    .topbar nav a{
+        border-top: 1px solid var(--line);
+        padding-top:5px;
+    }
+}
+
 /*-----header actions-----*/
 .header-actions {
     display: flex;
@@ -166,5 +172,24 @@ a {
         gap: 7px;
         padding: 9px 12px;
         font-size: 11px;
+    }
+}
+
+/*----------dark mode----------*/
+body.dark{
+    background-color:var(--coffee-dark);
+    --light-accent: #F5A38C;
+    color:#fff;
+
+    & .topbar button {
+        color:#fff;
+    }
+
+    & .topbar span, .order-now{
+        color: var(--light-accent);
+    }
+
+    & .order-now{
+        background-color: transparent;
     }
 }
