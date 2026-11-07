@@ -255,11 +255,7 @@ body.dark{
     }
 }
 
-<<<<<<< HEAD
 @media (max-width:1000px){
-=======
-@media (max-width:1100px){
->>>>>>> 18fa2838239828497813a12434610a11283faac1
     .page-banner{
         flex-flow:column nowrap;
 
@@ -270,13 +266,10 @@ body.dark{
             margin: auto;
         }
     }
-<<<<<<< HEAD
 }
 
 @media (max-width:600px){
     .page-banner .right img{
         width:80%;
     }
-=======
->>>>>>> 18fa2838239828497813a12434610a11283faac1
 }
