@@ -6,18 +6,22 @@
   <title>Order | Sa Poste Café</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/order.css">
+  <link rel="stylesheet" href="CSS/navigation.css">
   <script src="js/coffee-logo.js" defer></script>
   <script src="js/coffee-webgl.js" defer></script>
+  <script src="js/script.js" defer></script>
   <script src="js/order.js" defer></script>
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="index.html"><img src="Images/order/cba26.png" alt="Sa Poste Café"><span>NEIGHBORHOOD<br>COFFEE & COMPANY</span></a>
-  <button class="mobile-menu" type="button" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
-  <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Menu</a><a class="active" href="order.html" aria-current="page">Order</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
-  <div class="header-actions"><button id="theme" type="button" aria-label="Switch to dark theme">☾</button><a class="bag" href="#order-summary">♧ &nbsp; Your order (<span id="bag-count">0</span>)</a></div>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html"><img src="Images/SaPosteCafeLogo.jpg" alt=""><span class="site-brand-copy"><strong>Sa Poste Café</strong><small>Neighborhood Coffee &amp; Company</small></span></a>
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu"><span class="site-menu-label">Menu</span><span aria-hidden="true">☰</span></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation"><ul class="site-nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="order.html" aria-current="page">Order</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="site-header-actions"><button class="site-theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">☾</span></button><a class="bag" href="#order-summary">♧ &nbsp; Your order (<span id="bag-count">0</span>)</a></div>
+  </div>
 </header>
 <main>
   <section class="intro page-pad"><div><p class="eyebrow">THE SA POSTE COFFEE ATELIER</p><h1>Your daily, your way.</h1><p>Pick your coffee. Play with the little things. Make it unmistakably yours.</p></div><div class="pickup"><strong>● &nbsp; FRESHLY MADE FOR PICKUP</strong><p>⌖ &nbsp; Sa Poste Café · Jaro</p><small>Pickup estimate shown is illustrative</small></div></section>
@@ -30,6 +34,5 @@
   </section>
   <section class="pairings page-pad"><div class="companions"><p class="eyebrow">A LITTLE SOMETHING ON THE SIDE</p><div class="section-heading"><h2>Coffee loves company.</h2><a href="products.html">Browse the menu ↗</a></div><div class="pairing-grid"><article><p>Ensaymada Ball <b>₱65</b></p><small>Buttery brioche. A little sugar. A lot of cheese.</small><button type="button" data-pair="Ensaymada Ball" data-price="65">Add to order <span>＋</span></button></article><article><p>Cheese Rolls (Box of 5) <b>₱360</b></p><small>Soft, golden rolls for sharing. Or not.</small><button type="button" data-pair="Cheese Rolls (Box of 5)" data-price="360">Add to order <span>＋</span></button></article><article><p>Strawberry Frappe <b>₱135</b></p><small>Strawberry & cream, for your non-coffee friend.</small><button type="button" data-pair="Strawberry Frappe" data-price="135">Add to order <span>＋</span></button></article></div></div><aside class="summary" id="order-summary"><div class="summary-head"><h2>Your order</h2><small id="item-count">0 items</small></div><p class="summary-status" id="summary-status" aria-live="polite">Your order is empty.</p><div id="order-items"></div><div class="summary-totals"><p>Subtotal <span id="subtotal">₱0</span></p><p>Pickup <span>Free</span></p><p class="grand">Total <strong id="grand-total">₱0</strong></p></div><a class="primary checkout" href="contact.html">Contact the café <span>↗</span></a><p class="fine centered">Demo only · No order is sent or saved</p></aside></section>
   <section class="signoff page-pad"><img src="Images/order/entrance.png" alt="Sa Poste Café entrance"><div><p class="eyebrow">SAME RED COUNTER. SAME WARM WELCOME.</p><h2>From our counter,<br>to your everyday.</h2><i>“Kaon, Inom Kag Mag-Move-On!”</i></div><div class="address"><p>Sa Poste Café · Jaro</p><small>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</small><p><a href="contact.html">Find your neighborhood café ↗</a></p></div></section>
-</main><footer class="bottom page-pad"><span>© 2026 Sa Poste Café. Good coffee. Better company.</span><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Menu</a><a href="order.html">Order</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav><span><a href="https://www.instagram.com/saposte.iloilo">Instagram ↗</a>　<a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook ↗</a></span></footer>
+</main><footer class="site-footer"><div class="site-footer-inner"><a class="site-footer-brand" href="index.html">Sa Poste Café</a><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="order.html" aria-current="page">Order</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav><div class="site-footer-meta"><p>© 2026 Sa Poste Café. All rights reserved.</p><p><a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook</a> · <a href="https://www.instagram.com/saposte.iloilo">Instagram</a></p></div></div></footer>
 </body></html>
-
