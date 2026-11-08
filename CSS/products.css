@@ -11,7 +11,9 @@
     --accent:#9d160f;
     --ink: #352117;
     --line: #dccab5;
+    --paper: #FFFDF7;
     --bg: var(--cream);
+    --muted:#806B5A;
 }
 
 body {
@@ -41,6 +43,8 @@ body.dark{
     --accent: #F5A38C;
     --ink: #faf3e5;
     --line: #4a3a31;
+    --muted: #bba99a;
+    --paper: #2c221d;
 
     & .order-now{
         background-color: transparent;
@@ -314,6 +318,143 @@ body.dark{
             flex-flow:column nowrap;
             align-items:center;
             gap:10px;
+        }
+    }
+}
+
+/*-----coffee-----*/
+#coffee{
+    padding:40px;
+
+    & .title{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: end;
+        padding-bottom:20px;
+
+        & h1{
+            color:var(--accent);
+        }
+
+        & .description{
+            color:var(--muted);
+            max-width: 260px;
+        }
+    }
+
+    & .drinks{
+        gap:10px;
+        padding:0px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        & > li:first-child{
+            max-width:none;
+            background-color: #9d160f;
+            border-radius: 60px 20px 20px 20px;
+            color: var(--cream);
+
+            & .signatureDrink{
+                display:inline-flex;
+                align-items: center;
+                gap:15px;
+
+                & .marker{
+                    background-color: var(--cream);
+                    color:#9d160f;
+                    width:70px;
+                    height:70px;
+                    padding:7px;
+                    text-align: center;
+                    border-radius: 50%;
+
+                    & b{
+                        font-size: 10px;
+                    }
+
+                    & span{
+                        font-family: Lora, Georgia, serif;
+                    }
+                }
+            }
+
+            & .price{
+                font-size: 2rem;
+                position:static;
+            }
+
+            & h2{
+                font-size: 2.5rem;
+            }
+
+            & h2, .price{
+                color: var(--cream);
+            }
+
+            & .order{
+                background-color:var(--cream);
+                color: #9d160f;
+                padding:10px;
+                border-radius: 15px;
+                position: absolute;
+                right:20px;
+                bottom:10px;
+
+                &::after{
+                    position:static;
+                    content:"->";
+                }
+            }
+        }
+
+        & > li{
+            border-radius: 20px;
+            border:2px solid var(--line);
+            list-style-type: none;
+            background-color: var(--paper);
+            color: var(--muted);
+            padding:25px;
+            position: relative;
+            width:100%;
+            max-width: 450px;
+
+            & .description{
+                max-width: 400px;
+            }
+
+            & .price{
+                color:var(--accent);
+                font-size: 1.5rem;
+                font-weight: 700;
+                position: absolute;
+                top:10px;
+                right:10px;
+            }
+
+            & a{
+                text-decoration-line: none;
+            }
+
+            & h2{
+                color: var(--ink);
+            }
+
+            & .order{
+                display:block;
+                margin-top:5px;
+                padding-top:5px;
+                color: var(--accent);
+                position: relative;
+                border-top: 2px solid var(--line);
+
+                &::after{
+                    content:"+";
+                    position:absolute;
+                    right:5px;
+                }
+            }
         }
     }
 }
