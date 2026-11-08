@@ -515,6 +515,34 @@ section{
     }
 }
 
+/*-----seperator-----*/
+.seperator{
+    background-color: #9d160f;
+    padding:0px;
+
+    & ul{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:30px;
+        margin:0px;
+    }
+
+    & li{
+        background-color: transparent;
+        border:0px solid;
+        padding:10px 0px;
+
+        &:nth-child(odd){
+            color:var(--cream);
+        }
+
+        &:nth-child(even){
+            color:var(--muted);
+        }
+    }
+}
+
 /*-----shakes-----*/
 #shakes{
     background-color: var(--soft);
