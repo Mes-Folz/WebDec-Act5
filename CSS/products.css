@@ -215,7 +215,7 @@ body.dark{
     flex-flow: row nowrap;
     justify-content:space-around;
     padding:0px;
-    & h1, h2, p, li{
+    & h1, h2, li{
         color:var(--cream);
         position:relative;
         z-index: 1;
@@ -232,8 +232,17 @@ body.dark{
         }
 
         & p{
-            font-size:1.5rem;
+            font-size:1.25rem;
             margin:40px;
+
+            &:first-of-type{
+            font-size:1.5rem;
+                font-family: Lora, Georgia, serif;
+            }
+
+            & > span{
+                color:#50623D;
+            }
         }
 
         & img{
@@ -512,6 +521,10 @@ section{
         & > li:last-child:first-child{
             border-radius: 80px 80px 20px 20px;
         }
+    }
+
+    & .shakeFooter{
+        margin-top:30px;
     }
 }
 
