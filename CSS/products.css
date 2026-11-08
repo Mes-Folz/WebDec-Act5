@@ -208,6 +208,11 @@ body.dark{
 }
 
 /*----------<body>----------*/
+/*-----highlight-----*/
+.greenHighlight{
+    color: #50623D;
+}
+
 /*-----page banner-----*/
 .page-banner{
     background-color: var(--coffee);
@@ -238,10 +243,6 @@ body.dark{
             &:first-of-type{
             font-size:1.5rem;
                 font-family: Lora, Georgia, serif;
-            }
-
-            & > span{
-                color:#50623D;
             }
         }
 
