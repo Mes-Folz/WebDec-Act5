@@ -697,6 +697,7 @@ section{
 
 .footer-bottom a {
     color: var(--contact-cream);
+    text-align: center;
     text-decoration: none;
 }
 
@@ -704,4 +705,19 @@ section{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+/*-----responsive-----*/
+@media (max-width:1000px){
+    .footer-main{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:780px){
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+    }
 }
