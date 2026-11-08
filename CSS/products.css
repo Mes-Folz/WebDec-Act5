@@ -334,7 +334,7 @@ body.dark{
     }
 }
 
-/*-----section and title and marker-----*/
+/*-----section and title and marker and price-----*/
 section{
     padding:40px;
 
@@ -355,6 +355,7 @@ section{
         }
 
         & .description{
+            font-family: Lora, Georgia, serif;
             color:var(--muted);
             max-width: 260px;
         }
@@ -400,9 +401,6 @@ section{
         }
 
         & .price{
-            color:var(--accent);
-            font-size: 1.5rem;
-            font-weight: 700;
             position: absolute;
             top:10px;
             right:10px;
@@ -447,6 +445,12 @@ section{
         & h4{
             margin: 0 0 0.5em;
         }
+    }
+
+    & .price{
+        color:var(--accent);
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
 
@@ -532,5 +536,47 @@ section{
 @media (max-width:880px){
     #shakes .shakesAndYogurt{
         grid-template-columns: 1fr;
+    }
+}
+
+/*-----snacks-----*/
+#snacks > .content{
+    border-radius: 20px;
+    overflow: auto;
+    border: 2px solid var(--line);
+
+    & table{
+        width:100%;
+        border-collapse: collapse;
+
+        & thead{
+            background-color: #9d160f;
+            text-align: left;
+            color: var(--cream);
+
+            & tr{
+                border-top: 0px solid;
+            }
+        }
+
+        & tbody{
+            background-color: var(--paper);
+        }
+
+        & th, td{
+            padding:15px;
+        }
+
+        & tr{
+            border-top: 2px solid var(--line);
+        }
+
+        & td > .description{
+            font-size: 0.75rem;
+        }
+
+        & .description{
+            color:var(--muted);
+        }
     }
 }
