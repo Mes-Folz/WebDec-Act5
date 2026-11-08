@@ -14,6 +14,7 @@
     --paper: #FFFDF7;
     --bg: var(--cream);
     --muted:#806B5A;
+    --soft:#F3E0D3;
 }
 
 body {
@@ -45,6 +46,7 @@ body.dark{
     --line: #4a3a31;
     --muted: #bba99a;
     --paper: #2c221d;
+    --soft:#2c221d;
 
     & .order-now{
         background-color: transparent;
@@ -322,8 +324,8 @@ body.dark{
     }
 }
 
-/*-----coffee-----*/
-#coffee{
+/*-----section and title and marker-----*/
+section{
     padding:40px;
 
     & .title{
@@ -333,28 +335,121 @@ body.dark{
         align-items: end;
         padding-bottom:20px;
 
-        & h1{
+        & h4{
             color:var(--accent);
+        }
+
+        & h1{
+            color: var(--ink);
+            font-family: Fraunces, Georgia, serif;
         }
 
         & .description{
             color:var(--muted);
             max-width: 260px;
         }
+
+        & .marker{
+            background: #9d160f;
+            color: var(--cream);
+            padding:10px;
+        }
     }
 
-    & .drinks{
+    & .marker{
+        width:70px;
+        height:70px;
+        border-radius: 50%;
+        text-align: center;
+
+        & b{
+            font-size: 10px;
+        }
+
+        & span{
+            font-family: Lora, Georgia, serif;
+        }
+    }
+
+    & ul{
         gap:10px;
         padding:0px;
+    }
+
+    & li{
+        list-style-type: none;
+        border-radius: 20px;
+        border:2px solid var(--line);
+        background-color: var(--paper);
+        color: var(--muted);
+        padding:25px;
+        position: relative;
+
+        & .description{
+            max-width: 400px;
+        }
+
+        & .price{
+            color:var(--accent);
+            font-size: 1.5rem;
+            font-weight: 700;
+            position: absolute;
+            top:10px;
+            right:10px;
+        }
+
+        & a{
+            text-decoration-line: none;
+        }
+
+        & h2{
+            color: var(--ink);
+        }
+
+        & .order{
+            display:block;
+            margin-top:5px;
+            padding-top:5px;
+            color: var(--accent);
+            position: relative;
+            border-top: 2px solid var(--line);
+
+            &::after{
+                content:"+";
+                position:absolute;
+                right:5px;
+            }
+        }
+    }
+
+    & li.signature{
+        background-color: #9d160f;
+        color: var(--cream);
+
+        & h2, .price, .order, h4{
+            color: var(--cream);
+        }
+
+        & .order{
+            border-top: 1px solid #FAF3E530;
+        }
+
+        & h4{
+            margin: 0 0 0.5em;
+        }
+    }
+}
+
+/*-----coffee-----*/
+#coffee{
+    & .drinks{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
 
-        & > li:first-child{
+        & > li.signature{
             max-width:none;
-            background-color: #9d160f;
-            border-radius: 60px 20px 20px 20px;
-            color: var(--cream);
+            border-radius: 80px 20px 20px 20px;
 
             & .signatureDrink{
                 display:inline-flex;
@@ -364,19 +459,7 @@ body.dark{
                 & .marker{
                     background-color: var(--cream);
                     color:#9d160f;
-                    width:70px;
-                    height:70px;
                     padding:7px;
-                    text-align: center;
-                    border-radius: 50%;
-
-                    & b{
-                        font-size: 10px;
-                    }
-
-                    & span{
-                        font-family: Lora, Georgia, serif;
-                    }
                 }
             }
 
@@ -387,10 +470,6 @@ body.dark{
 
             & h2{
                 font-size: 2.5rem;
-            }
-
-            & h2, .price{
-                color: var(--cream);
             }
 
             & .order{
@@ -410,51 +489,34 @@ body.dark{
         }
 
         & > li{
-            border-radius: 20px;
-            border:2px solid var(--line);
-            list-style-type: none;
-            background-color: var(--paper);
-            color: var(--muted);
-            padding:25px;
-            position: relative;
             width:100%;
             max-width: 450px;
-
-            & .description{
-                max-width: 400px;
-            }
-
-            & .price{
-                color:var(--accent);
-                font-size: 1.5rem;
-                font-weight: 700;
-                position: absolute;
-                top:10px;
-                right:10px;
-            }
-
-            & a{
-                text-decoration-line: none;
-            }
-
-            & h2{
-                color: var(--ink);
-            }
-
-            & .order{
-                display:block;
-                margin-top:5px;
-                padding-top:5px;
-                color: var(--accent);
-                position: relative;
-                border-top: 2px solid var(--line);
-
-                &::after{
-                    content:"+";
-                    position:absolute;
-                    right:5px;
-                }
-            }
         }
+    }
+}
+
+/*-----shakes-----*/
+#shakes{
+    background-color: var(--soft);
+
+    & .shakesAndYogurt{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & > li:first-child{
+            border-radius: 80px 20px 20px 20px;
+        }
+        & > li:last-child{
+            border-radius: 20px 20px 80px 20px;
+        }
+        & > li:last-child:first-child{
+            border-radius: 80px 80px 20px 20px;
+        }
+    }
+}
+
+@media (max-width:880px){
+    #shakes .shakesAndYogurt{
+        grid-template-columns: 1fr;
     }
 }
