@@ -271,6 +271,18 @@ body.dark{
     }
 }
 
+@media (max-width:880px){
+    .page-banner .left h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:400px){
+    .page-banner .left h1 {
+        font-size: 2.25rem;
+    }
+}
+
 @media (max-width:1000px){
     .page-banner{
         flex-flow:column nowrap;
