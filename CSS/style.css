@@ -1103,7 +1103,7 @@ body.dark .home-button-light {
 }
 
 body.dark .page-banner {
-    background: #2A1B15;
+    background: #8F1912;
     color: #FAF3E5;
 }
 
@@ -1112,7 +1112,7 @@ body.dark .page-banner h1 {
 }
 
 body.dark .page-banner p {
-    color: #CBB7A7;
+    color: #F3C1B5;
 }
 
 body.dark .footer {
@@ -1136,6 +1136,16 @@ body.dark .about-mvv,
 body.dark .contact-info {
     background: var(--tan);
     color: var(--coffee);
+}
+
+body.dark .about-grid .about-mvv:first-child {
+    border-color: #C64A3D;
+    background: #75150F;
+    color: #FAF3E5;
+}
+
+body.dark .about-grid .about-mvv:first-child h3 {
+    color: #FAF3E5;
 }
 
 body.dark textarea,
@@ -1413,6 +1423,10 @@ body.dark .file-field input[type="file"] {
 
 .gallery-section {
     background: linear-gradient(to bottom, var(--cream) 0 260px, var(--tan) 260px 100%);
+}
+
+body.dark .gallery-section {
+    background: linear-gradient(to bottom, #75150F 0 180px, #1B1612 180px 100%);
 }
 
 .gallery-intro {

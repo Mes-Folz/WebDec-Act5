@@ -11,15 +11,15 @@ body.dark {
     --site-header-bg: #1B1612;
     --site-header-text: #FAF3E5;
     --site-header-muted: #BBA99A;
-    --site-header-accent: #F5A38C;
+    --site-header-accent: #A81710;
     --site-header-focus: #F2B84B;
     --cream: #1B1612;
     --tan: #2C221D;
     --tan-line: #4A3A31;
     --coffee: #FAF3E5;
     --coffee-dark: #FAF3E5;
-    --terracotta: #F5A38C;
-    --terracotta-dark: #F5A38C;
+    --terracotta: #D1543D;
+    --terracotta-dark: #F17D6D;
     --sage: #A9B893;
     background: #1B1612;
     color: #FAF3E5;
