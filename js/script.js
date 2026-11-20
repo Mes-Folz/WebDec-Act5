@@ -1,5 +1,15 @@
 document.documentElement.classList.add("js");
 
+const themeStorageKey = "sa-poste-theme";
+let savedTheme = "light";
+try {
+    savedTheme = localStorage.getItem(themeStorageKey) || "light";
+} catch (error) {
+    console.warn("Could not read the saved theme preference.", error);
+}
+const startsDark = savedTheme === "dark";
+document.body.classList.toggle("dark", startsDark);
+
 const menuToggle = document.querySelector(".site-menu-toggle");
 const siteNavigation = document.querySelector("#site-navigation");
 
@@ -29,9 +39,18 @@ document.addEventListener("keydown", event => {
 });
 
 const themeToggle = document.querySelector(".site-theme-toggle");
+themeToggle.setAttribute("aria-pressed", String(startsDark));
+themeToggle.setAttribute("aria-label", startsDark ? "Switch to light theme" : "Switch to dark theme");
+themeToggle.querySelector('[aria-hidden="true"]').textContent = startsDark ? "☀" : "☾";
+
 themeToggle.addEventListener("click", () => {
     const dark = document.body.classList.toggle("dark");
     themeToggle.setAttribute("aria-pressed", String(dark));
     themeToggle.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
     themeToggle.querySelector('[aria-hidden="true"]').textContent = dark ? "☀" : "☾";
+    try {
+        localStorage.setItem(themeStorageKey, dark ? "dark" : "light");
+    } catch (error) {
+        console.warn("Could not save the theme preference.", error);
+    }
 });
