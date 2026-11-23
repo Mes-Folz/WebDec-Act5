@@ -4,4 +4,25 @@
 .options label span,.drink-card,.primary{transition:transform .18s ease,background-color .18s ease}.options input:checked+span{animation:option-pop .25s ease-out}.drink-card:active,.primary:active{transform:scale(.97)}.primary:hover{filter:brightness(1.08)}@keyframes option-pop{0%{transform:scale(.96)}60%{transform:scale(1.035)}100%{transform:scale(1)}}
 .ice-label,.sweet-label{z-index:3}
 #custom-form .order-added{background:#526540;animation:order-confirm .4s ease-out}.bag-added{animation:bag-confirm .45s ease-out}#bag-count{display:inline-block}@keyframes order-confirm{0%{transform:scale(.96)}55%{transform:scale(1.035)}100%{transform:scale(1)}}@keyframes bag-confirm{0%{transform:translateY(0)}35%{transform:translateY(-5px) scale(1.06)}65%{transform:translateY(1px)}100%{transform:translateY(0)}}
-.customizer-workspace{display:contents}@media(max-width:700px){.customizer-workspace{display:block;position:relative;width:100%;min-width:0}.customizer-workspace .stage{position:sticky;top:0;z-index:40;height:230px;min-height:230px;border-radius:16px;box-shadow:0 8px 18px #24181322}.customizer-workspace .stage-heading,.customizer-workspace .stage-script,.customizer-workspace .glow,.customizer-workspace .favorite,.customizer-workspace .plinth,.customizer-workspace .ice-label,.customizer-workspace .sweet-label,.customizer-workspace .stage-bottom{display:none}.customizer-workspace .customize{padding-top:24px}.customizer-workspace input,.customizer-workspace button{scroll-margin-top:250px}.customizer-workspace .stage:not(.has-webgl) .cup{top:4px;transform:translateX(-50%) scale(.46);transform-origin:top center}}
+.customizer-workspace{display:contents}@media(max-width:700px){.customizer-workspace{display:block;position:relative;width:100%;min-width:0}.customizer-workspace .stage{position:relative;height:230px;min-height:230px;border-radius:16px;box-shadow:0 8px 18px #24181322}.customizer-workspace .stage-heading,.customizer-workspace .stage-script,.customizer-workspace .glow,.customizer-workspace .favorite,.customizer-workspace .plinth,.customizer-workspace .ice-label,.customizer-workspace .sweet-label,.customizer-workspace .stage-bottom{display:none}.customizer-workspace .customize{padding-top:24px}.customizer-workspace .stage:not(.has-webgl) .cup{top:4px;transform:translateX(-50%) scale(.46);transform-origin:top center}}
+.atelier[hidden]{display:none!important}.product-preview{display:grid;grid-template-columns:minmax(0,360px) minmax(0,480px);gap:40px;align-items:center;padding-top:24px;padding-bottom:50px}.product-preview img{width:100%;height:300px;object-fit:cover;border-radius:16px}.product-preview h2{font-size:clamp(2rem,4vw,3rem);margin:16px 0}.product-preview p:not(.eyebrow){line-height:1.6;color:var(--muted)}.product-preview .product-price{font-size:24px;font-weight:700;color:var(--accent)!important;margin:16px 0}.product-preview .primary{max-width:300px}.product-preview a{display:inline-block;margin-top:20px;color:var(--accent)}@media(max-width:700px){.product-preview{grid-template-columns:1fr;gap:24px}.product-preview img{height:230px}}
+.preview-controls{display:none}
+@media(max-width:700px){
+  .customizer-workspace .stage{height:124px;min-height:124px;transition:height .25s ease,min-height .25s ease}
+  .customizer-workspace .stage.preview-expanded{height:310px;min-height:310px}
+  .customizer-workspace .stage.preview-hidden{height:68px;min-height:68px}
+  .preview-controls{position:absolute;z-index:4;inset:0 8px 0 46%;display:flex;flex-direction:column;justify-content:center;gap:9px;color:#fffdf7}
+  .preview-controls strong{display:block;font-size:10px;letter-spacing:.12em}
+  .preview-controls span{display:block;margin-top:5px;font-size:11px;line-height:1.4}
+  .preview-actions{display:flex;flex-wrap:wrap;gap:6px}
+  .preview-actions button{border:1px solid #fff9;border-radius:20px;padding:6px 10px;background:#76100c;color:#fff;font-size:11px;font-weight:600}
+  .preview-expanded .preview-controls{inset:12px 10px auto;flex-direction:row;justify-content:space-between;align-items:start}
+  .preview-expanded .preview-controls>div:first-child{max-width:55%}
+  .preview-expanded .coffee-scene{top:42px;height:268px}
+  .preview-hidden .preview-controls{inset:0 12px;flex-direction:row;align-items:center;justify-content:space-between}
+  .preview-hidden .coffee-scene,.preview-hidden .cup{display:none!important}
+  .preview-hidden .preview-controls span{display:none}
+  .customizer-workspace .stage:not(.has-webgl):not(.preview-expanded) .cup{top:-8px;left:23%;transform:translateX(-50%) scale(.30)}
+  .customizer-workspace .stage:not(.has-webgl).preview-expanded .cup{top:50px;transform:translateX(-50%) scale(.56)}
+  .customizer-workspace .stage:not(.preview-expanded) .coffee-scene{width:46%}
+}

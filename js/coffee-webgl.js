@@ -237,7 +237,7 @@ window.createCoffeeScene = function createCoffeeScene(canvas) {
       gl.drawArrays(gl.TRIANGLES,0,shape.count);
     }
     function draw(now) {
-      if (lost || !state) return;
+      if (lost || !state || !canvas.clientWidth || !canvas.clientHeight) return;
       const elapsed = Math.max(0,now-started);
       progress = motion.matches ? 1 : Math.min(1,elapsed/duration);
       const dt = Math.min(.033,Math.max(0,(now-lastDraw)/1000));
@@ -255,9 +255,10 @@ window.createCoffeeScene = function createCoffeeScene(canvas) {
       if(canvas.width!==w || canvas.height!==h){canvas.width=w;canvas.height=h;}
       gl.viewport(0,0,w,h); gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
       const phone = canvas.clientWidth <= 700 && window.innerWidth <= 700;
-      const compact = phone && canvas.clientHeight<=300;
-      const viewWidth = Math.min(canvas.clientWidth*.94,compact?200:phone?300:380), viewHeight=compact?260:phone?390:480;
-      const viewTop=compact?-15:178;
+      const compact = phone && canvas.clientHeight<=160;
+      const expanded = phone && canvas.clientHeight>160 && canvas.clientHeight<=400;
+      const viewWidth = Math.min(canvas.clientWidth*.94,compact?115:expanded?220:phone?300:380), viewHeight=compact?145:expanded?280:phone?390:480;
+      const viewTop=compact?-10:expanded?0:178;
       gl.uniform1f(uniforms.aspect,viewWidth/viewHeight);
       gl.uniform4fv(uniforms.framing,[viewWidth/canvas.clientWidth,viewHeight/canvas.clientHeight,0,1-(2*viewTop+viewHeight)/canvas.clientHeight]);
       gl.uniform1f(uniforms.cupSize,displayedSize);
