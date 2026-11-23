@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navigation.css">
+    <link rel="stylesheet" href="./CSS/about-gallery.css">
     <script src="./js/script.js" defer></script>
 </head>
-<body>
+<body class="about-page">
     <header class="site-header">
         <div class="site-header-inner">
             <a class="site-brand" href="index.html">
@@ -39,29 +40,64 @@
     </header>
 
         <main>
-            <section class="page-banner">
+            <section class="about-hero">
                 <div class="wrap">
-                    <h1>About Us</h1>
-                    <p>Learn more about Sa Poste Cafe, our story, and our passion for creating flavorful drinks!</p>
+                    <p class="eyebrow">Our Story</p>
+                    <h1>A Café Built For The Neighborhood.</h1>
+                    <p class="slogan">"Kaon, Inom Kag Mag-Move-On!"</p>
+                </div>
+            </section>
+
+            <section class="about-tagline">
+                <div class="wrap about-tagline-inner">
+                    <p>Good drinks. Fair prices. A corner of Iloilo you can always come back to.</p>
+                    <div>
+                        <a class="button button-red" href="order.html">Order Now</a>
+                        <a class="button button-outline" href="products.html">View Menu</a>
+                    </div>
                 </div>
             </section>
 
             <section class="section-dimensions">
                 <div class="wrap about-design1">
-                    <img src="./Images/SaPosteFrontPic.jpeg" alt="Story Pic">
+                    <img src="./Images/SaPosteFrontPic.jpeg" alt="Sa Poste Cafe storefront">
                     <div class="about-design2">
-                        <h2>Our Story</h2>
-                        <p>Sa Poste Café started as a small drinks stall built around one idea: Iloilo deserves affordable, genuinely tasty coffee and shakes without the long lines or the mall-food-court price tag. The name "Sa Poste" — literally "at the post" — nods to its early roots as a stop-and-grab spot along the street corner, the kind of place you pass by on your commute and end up returning to on purpose.</p>
-                        <p>What began with a short menu of iced coffee and fruit shakes slowly grew as regulars kept asking for more. Cheese rolls and ensaymada balls were added for people who wanted something to eat alongside their drink. Corndogs and homemade siomai followed soon after, aimed at students and office workers looking for a quick, filling snack between classes or shifts.</p>
-                        <p>The Jaro branch on Del Carmen Street opened to serve the barangay's steady mix of students, tricycle drivers, church-goers, and families living nearby. Its warm, unfussy setup — a covered seating area, simple tables, and a menu board up front — was designed so that anyone could walk in, order in under a minute, and either stay for a while or take their drink to go.</p>
-                        <p>As demand grew across Iloilo City, Sa Poste expanded to three more locations — Molo, Pavia, and along C1 — each run with the same recipes and the same emphasis on quick, friendly service. Despite the growth, the café has stayed close to its original promise: good drinks, fair prices, and a place in the neighborhood that feels familiar.</p>
+                        <p class="eyebrow">01 / Our Story</p>
+                        <h2>From a street corner stall to your neighborhood.</h2>
+                        <p>Sa Poste Café started as a small drinks stall with a simple goal of serving the people of Iloilo affordable and delicious coffee and shakes. The name "Sa Poste," meaning "at the post," reflects its humble beginnings as a convenient stop where people could grab their favorite drinks while passing by.</p>
+                        <p>What started with a limited selection of iced coffee and fruit shakes gradually grew into a wider menu. As customer demand increased, the café introduced snacks such as cheese rolls, ensaymada, burgers, burritos, and homemade siomai, giving customers more options to enjoy alongside their drinks.</p>
+                        <p>The Jaro branch along Del Carmen Street was established to serve students, workers, and nearby residents looking for affordable refreshments and quick snacks. With its welcoming atmosphere and convenient setup, customers can comfortably dine in or take their orders home.</p>
+                        <p>Today, Sa Poste Café has expanded to five other locations in Molo, Pavia, SM Central Market, Festive KTOWN, and along C1. Despite its growth, the café remains committed to its original goal of providing quality products at reasonable prices, along with quick and friendly service.</p>
+                        <p>More than just a place to buy coffee and snacks, Sa Poste Café aims to be a familiar and welcoming spot where people can relax, enjoy good food and drinks, and create simple moments with friends and family.</p>
                     </div>
+                </div>
+
+                <div class="wrap about-photos">
+                    <img src="./Images/gallery-outdoor.png" alt="Outdoor café seating beneath hanging lights" width="360" height="200" loading="lazy">
+                    <img src="./Images/gallery2.jpeg" alt="Interior" width="360" height="200" loading="lazy">
+                    <img src="./Images/gallery4.jpeg" alt="Cozy corner seating" width="360" height="200" loading="lazy">
                 </div>
             </section>
 
             <section class="section-dimensions section-dimensions-tan">
                 <div class="wrap">
-                    <h2>Mission, Vision, and Values</h2>
+                    <div class="about-facts">
+                        <div class="fact"><strong>6</strong><span>branches across Iloilo</span></div>
+                        <div class="fact"><strong>10 AM – 2 AM</strong><span>open daily</span></div>
+                        <div class="fact"><strong>Same recipes</strong><span>at every branch</span></div>
+                    </div>
+                    <p class="facts-note">See what our customers see: <a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook</a> · <a href="https://www.instagram.com/saposte.iloilo">Instagram</a></p>
+                </div>
+            </section>
+
+            <section class="strip">
+                <p>Coffee • Shakes • Cheese Rolls • Burgers • Rice Meals • Burrito • Ensaymada • Siomai</p>
+            </section>
+
+            <section class="section-dimensions">
+                <div class="wrap">
+                    <p class="eyebrow">02 / What We Stand For</p>
+                    <h2 class="about-heading">Mission, Vision &amp; Values.</h2>
                     <div class="about-grid">
                         <div class="about-mvv">
                             <h3>Mission</h3>
@@ -80,8 +116,57 @@
                     </div>
                 </div>
             </section>
-        </main>
 
+            <section class="photo-banner">
+                <div class="wrap">
+                    <h2>Same red counter. Same warm welcome.</h2>
+                    <p>Sa Poste Café · Jaro · KL Building, Del Carmen Street</p>
+                </div>
+            </section>
+
+            <section class="section-dimensions">
+                <div class="wrap">
+                    <p class="eyebrow">03 / Find Us</p>
+                    <h2 class="about-heading">From our counter, to your everyday.</h2>
+
+                    <div class="locations">
+                        <div class="location location-main">
+                            <h3>Sa Poste Café · Jaro</h3>
+                            <p>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</p>
+                            <p>Daily · 10:00 AM – 2:00 AM</p>
+                        </div>
+
+                        <div class="location">
+                            <h3>Sa Poste · Molo</h3>
+                            <p>Locsin St, Molo, Iloilo City</p>
+                            <p>Daily · 10:00 AM – 12:00 AM</p>
+                        </div>
+
+                        <div class="location">
+                            <h3>Sa Poste · Pavia</h3>
+                            <p>Lopez Jaena St, Pavia, Iloilo</p>
+                            <p>Daily · 11:00 AM – 9:00 PM</p>
+                        </div>
+
+                        <div class="location">
+                            <h3>Sa Poste · C1</h3>
+                            <p>Petron Gas Station, C1 Road, Iloilo City</p>
+                            <p>Daily · 10:00 AM – 9:00 PM</p>
+                        </div>
+                        <div class="location">
+                            <h3>Sa Poste · SM Central Market</h3>
+                            <p>Iloilo Central Public Market, Rizal St, Iloilo City Proper, Iloilo City</p>
+                            <p>Daily · 10:00 AM – 9:00 PM</p>
+                        </div>
+                        <div class="location">
+                            <h3>Sa Poste · KTOWN</h3>
+                            <p>Festive Walk, Mandurriao, Iloilo City</p>
+                            <p>Daily · 10:00 AM – 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="site-footer">
             <div class="site-footer-inner">

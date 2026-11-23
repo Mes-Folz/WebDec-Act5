@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navigation.css">
+    <link rel="stylesheet" href="./CSS/about-gallery.css">
     <script src="./js/script.js" defer></script>
 </head>
-<body>
+<body class="gallery-page">
     <header class="site-header">
         <div class="site-header-inner">
             <a class="site-brand" href="index.html">
@@ -39,58 +40,88 @@
     </header>
 
         <main>
+            <section class="gallery-hero">
+                <div class="gallery-hero-text">
+                    <p class="eyebrow">The Sa Poste Gallery</p>
+                    <h1>Kaon. Inom. Mag-Move-On.</h1>
+                    <p>Little glimpses of life at our café, filled with genuine moments, warm vibes, and memories worth coming back for.</p>
+                </div>
+                <div class="gallery-hero-photo"></div>
+            </section>
+
+            <section class="strip">
+                <p>Good Coffee • Better Company • Jaro, Iloilo • Daily 10AM–2AM</p>
+            </section>
+
             <section class="section-dimensions gallery-section">
                 <div class="wrap">
                     <div class="gallery-intro">
-                        <p class="gallery-note">Moments at Sa Poste Cafe</p>
-                        <h2>Our Gallery</h2>
-                        <p>Small moments from our café—good drinks, comfort food, and cozy corners.</p>
+                        <p class="gallery-note">01 / Captured Moments</p>
+                        <h2>Inside our neighborhood.</h2>
+                        <p>A collection of café spaces, food, and drinks.</p>
                     </div>
 
                     <div class="gallery-grid">
                         <div class="gallery-box">
-                            <img src="./Images/gallery1.jpeg" alt="Cafe storefront">
+                            <img src="./Images/gallery1.jpeg" alt="Cafe storefront" width="400" height="200" loading="lazy">
                             <p>Storefront</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery2.jpeg" alt="Cafe interior">
+                            <img src="./Images/gallery2.jpeg" alt="Cafe interior" width="400" height="200" loading="lazy">
                             <p>Interior</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery3.jfif" alt="Dining table with food">
-                            <p>Dining Table with Food</p>
+                            <img src="./Images/gallery-drinks.png" alt="Two iced drinks on a café table" width="400" height="200" loading="lazy">
+                            <p>Iced Drinks</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery4.jpeg" alt="Cozy corner seating">
+                            <img src="./Images/gallery4.jpeg" alt="Cozy corner seating" width="400" height="200" loading="lazy">
                             <p>Cozy Corner</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery5.jfif" alt="Spanish latte">
-                            <p>Spanish Latte</p>
+                            <img src="./Images/gallery-outdoor.png" alt="Outdoor café seating beneath hanging lights" width="400" height="200" loading="lazy">
+                            <p>Outdoor Seating</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery6.jfif" alt="Strawberry cheesecake">
-                            <p>Strawberry Cheesecake</p>
+                            <img src="./Images/gallery-dessert.png" alt="Purple iced dessert with toppings" width="400" height="200" loading="lazy">
+                            <p>Iced Dessert</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery7.jfif" alt="Matcha series drinks">
-                            <p>Matcha Series</p>
+                            <img src="./Images/gallery-counter.png" alt="Café staff behind the counter" width="400" height="200" loading="lazy">
+                            <p>At the Counter</p>
                         </div>
 
                         <div class="gallery-box">
-                            <img src="./Images/gallery8.jpg" alt="Cafe ambience">
-                            <p>Cafe Ambience</p>
+                            <img src="./Images/gallery-meals.png" alt="Meals and drinks arranged on a table" width="400" height="200" loading="lazy">
+                            <p>Meals to Share</p>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section class="gallery-quote">
+                <div class="wrap">
+                    <p>"Come for the cup.<br>Stay for the moment."</p>
+                    <small>Sa Poste Café — Jaro, Iloilo</small>
+                </div>
+            </section>
+
+            <section class="gallery-cta">
+                <div class="wrap gallery-cta-inner">
+                    <div>
+                        <p class="eyebrow">Same red counter. Same warm welcome.</p>
+                        <h2>From our counter, to your everyday.</h2>
+                        <a class="button button-light" href="contact.html">Visit us in Jaro</a>
+                    </div>
+                    <img src="./Images/gallery1.jpeg" alt="Sa Poste Cafe storefront" width="400" height="220" loading="lazy">
+                </div>
+            </section>
         </main>
 
         <footer class="site-footer">

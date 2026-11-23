@@ -1,0 +1,144 @@
+.about-page, .gallery-page {
+    --red-panel: #A81710;
+    --on-red: #FAF4EA;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: var(--terracotta-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.button-red     { background: var(--red-panel); color: var(--on-red); }
+.button-outline { border-color: var(--red-panel); color: var(--red-panel); }
+.button-light   { background: var(--on-red); color: var(--red-panel); }
+
+.strip {
+    background: var(--coffee-dark);
+    color: var(--cream);
+    text-align: center;
+    padding: 16px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.strip p { margin: 0 auto; max-width: none; }
+
+.about-hero {
+    padding: 96px 0 48px;
+    color: var(--on-red);
+    background:
+        linear-gradient(rgba(168, 23, 16, 0.85), rgba(168, 23, 16, 0.85)),
+        url("../Images/SaPosteFrontPic.jpeg") center / cover;
+}
+.about-hero .eyebrow { color: var(--on-red); }
+.about-hero h1 { max-width: 600px; color: var(--on-red); font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 900; overflow-wrap: anywhere; }
+.slogan { margin: 0; font-family: var(--font-display); font-style: italic; }
+
+.about-tagline { background: var(--tan); border-bottom: 1px solid var(--tan-line); }
+.about-tagline-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.about-tagline p { margin: 0; font-family: var(--font-display); font-style: italic; }
+.about-tagline .button { padding: 8px 20px; font-size: 0.9rem; }
+
+.about-design2 h2 { font-size: 2.5rem; font-weight: 900; }
+.about-design2 { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+.about-design1 .about-design2 p { padding: 0; background: transparent; }
+.about-page main { line-height: 1.6; }
+.about-page main h1, .about-page main h2, .gallery-page main h1, .gallery-page main h2 { line-height: 1.15; }
+.about-tagline-inner > div { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.about-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.about-photos img { width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); }
+
+.about-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center; }
+.fact { background: var(--cream); border: 1px solid var(--tan-line); border-radius: var(--radius); padding: 20px; }
+.fact strong { display: block; font-family: var(--font-display); font-size: 1.6rem; color: var(--terracotta-dark); }
+.facts-note { margin: 20px auto 0; text-align: center; font-size: 0.9rem; }
+.facts-note a { color: var(--terracotta-dark); text-decoration: underline; }
+
+.about-heading { font-size: 2.5rem; font-weight: 900; }
+
+.about-grid .about-mvv:first-child { background: var(--red-panel); border-color: var(--red-panel); color: var(--on-red); }
+.about-grid .about-mvv:first-child h3 { color: var(--on-red); }
+
+.about-grid .about-mvv:last-child { background: #3B2A1E; border-color: #3B2A1E; color: #FAF4EA; }
+.about-grid .about-mvv:last-child h3 { color: #FAF4EA; }
+
+.photo-banner {
+    padding: 80px 0;
+    color: #FAF4EA;
+    background:
+        linear-gradient(rgba(36, 24, 19, 0.7), rgba(36, 24, 19, 0.7)),
+        url("../Images/gallery2.jpeg") center / cover;
+}
+.photo-banner h2 { color: #FAF4EA; font-size: 2.5rem; font-weight: 900; }
+.photo-banner p { margin: 0; font-style: italic; }
+
+.locations { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+.location { background: var(--cream); border: 1px solid var(--tan-line); border-radius: var(--radius); padding: 16px; font-size: 0.9rem; }
+.location h3 { font-family: var(--font-body); font-size: 1rem; }
+.location p { margin: 0 0 4px; }
+
+.location-main { grid-column: 1 / -1; background: var(--red-panel); border-color: var(--red-panel); color: var(--on-red); }
+.location-main h3 { color: var(--on-red); }
+
+.gallery-hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 380px; }
+
+.gallery-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 32px 48px max(24px, calc((100vw - var(--max-width)) / 2 + 24px));
+    background: var(--red-panel);
+    color: var(--on-red);
+}
+.gallery-hero-text .eyebrow { color: var(--on-red); }
+.gallery-hero-text h1 { color: var(--on-red); font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; }
+.gallery-hero-text p:last-child { margin: 0; font-family: var(--font-display); font-style: italic; }
+
+.gallery-hero-photo { background: url("../Images/gallery1.jpeg") center / cover; }
+
+.gallery-item { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.gallery-item:hover img { opacity: 0.9; }
+.gallery-item:focus-visible { outline: 3px solid var(--terracotta); outline-offset: -3px; }   /* shows when using the keyboard */
+
+.gallery-quote { padding: 0 0 64px; text-align: center; background: var(--tan); }
+.gallery-quote p { margin: 0 auto 8px; font-family: var(--font-display); font-style: italic; font-size: 1.6rem; }
+.gallery-quote small { color: var(--terracotta-dark); letter-spacing: 0.15em; text-transform: uppercase; }
+.gallery-section { background: var(--tan); }
+body.dark.gallery-page .gallery-section { background: var(--tan); }
+.gallery-hero-text { min-width: 0; }
+
+.gallery-cta { padding: 48px 0; background: var(--red-panel); color: var(--on-red); }
+.gallery-cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+.gallery-cta .eyebrow { color: var(--on-red); }
+.gallery-cta h2 { color: var(--on-red); font-size: 2.5rem; font-weight: 900; }
+.gallery-cta img { width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius); }
+.strip { background: #241813; color: #FAF4EA; }
+body.dark .about-grid .about-mvv:first-child { background: var(--red-panel); color: var(--on-red); border-color: var(--red-panel); }
+body.dark .about-grid .about-mvv:first-child h3 { color: var(--on-red); }
+
+@media (max-width: 800px) {
+    .about-design1 { flex-direction: column; align-items: stretch; }
+    .about-design1 img { width: 100%; max-width: 340px; }
+    .about-grid,
+    .about-photos,
+    .about-facts,
+    .locations,
+    .gallery-hero,
+    .gallery-cta-inner { grid-template-columns: 1fr; }
+
+    .gallery-hero-text { padding: 48px 24px; }
+    .gallery-hero-photo { min-height: 220px; }
+}
