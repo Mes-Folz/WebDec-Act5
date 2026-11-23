@@ -110,8 +110,4 @@ form.addEventListener('submit', event => {
 document.querySelector('#minus').addEventListener('click', () => { quantity = Math.max(1, quantity - 1); update(); });
 document.querySelector('#plus').addEventListener('click', () => { quantity = Math.min(99, quantity + 1); update(); });
 document.querySelectorAll('[data-pair]').forEach(button => button.addEventListener('click', () => { items.push({ name: button.dataset.pair, price: Number(button.dataset.price), quantity: 1, description: 'Pairing' }); renderOrder(); }));
-const theme = document.querySelector('#theme');
-theme.addEventListener('click', () => { const dark = document.body.classList.toggle('dark'); theme.textContent = dark ? '☀' : '☾'; theme.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme'); });
-const menu = document.querySelector('.mobile-menu');
-menu.addEventListener('click', () => { const open = document.querySelector('#navigation').classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
 renderDrinks(); update(); renderOrder();

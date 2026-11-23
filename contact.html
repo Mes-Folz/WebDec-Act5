@@ -6,31 +6,38 @@
     <title>Contact | Sa Poste Café</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/navigation.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <header class="contact-header">
-        <div class="topbar">
-            <a class="brand" href="index.html">
-                <img src="./Images/order/cba26.png" alt="Sa Poste Café">
-                <span>NEIGHBORHOOD<br>COFFEE &amp; COMPANY</span>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="site-brand" href="index.html">
+                <img src="./Images/SaPosteCafeLogo.jpg" alt="">
+                <span class="site-brand-copy"><strong>Sa Poste Café</strong><small>Neighborhood Coffee &amp; Company</small></span>
             </a>
-            <button class="mobile-menu" type="button" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
-            <nav class="top-navigation" id="navigation" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="products.html">Menu</a>
-                <a href="order.html">Order</a>
-                <a href="gallery.html">Gallery</a>
-                <a class="active" href="contact.html" aria-current="page">Contact</a>
+            <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu">
+                <span class="site-menu-label">Menu</span><span aria-hidden="true">☰</span>
+            </button>
+            <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+                <ul class="site-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
             </nav>
-            <div class="header-actions">
-                <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme">☾</button>
-                <a class="order-now" href="order.html"><img src="./Images/contact/shopping-bag.svg" alt="">Order Now</a>
+            <div class="site-header-actions">
+                <button class="site-theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">☾</span></button>
+                <a href="order.html">Order Now</a>
             </div>
         </div>
+    </header>
 
         <section class="contact-hero" aria-labelledby="hero-title">
             <div class="hero-copy">
@@ -67,7 +74,6 @@
                 <span>JARO</span>
             </div>
         </div>
-    </header>
 
     <main>
         <section class="contact-main" aria-label="Find us and send a message">
@@ -262,33 +268,21 @@
         </section>
     </main>
 
-    <footer class="contact-footer">
-        <div class="footer-main">
-            <div class="footer-postcard">
-                <img src="./Images/contact/storefront-postcard.png" alt="Sa Poste Café storefront">
-            </div>
-            <div class="footer-copy">
-                <p class="footer-eyebrow">SAME RED COUNTER. SAME WARM WELCOME.</p>
-                <h2>From our counter,<br>to your everyday.</h2>
-                <p class="footer-tagline">“Kaon, Inom Kag Mag-Move-On!”</p>
-                <div class="footer-address">
-                    <p>Sa Poste Café · Jaro</p>
-                    <p>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</p>
-                    <p>Daily · 10:00 AM – 2:00 AM</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Sa Poste Café. Good coffee. Better company.</p>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <a class="site-footer-brand" href="index.html">Sa Poste Café</a>
             <nav aria-label="Footer navigation">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="products.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
                 <a href="order.html">Order</a>
                 <a href="gallery.html">Gallery</a>
-                <a class="active" href="contact.html" aria-current="page">Contact</a>
+                <a href="contact.html" aria-current="page">Contact</a>
             </nav>
-            <p><a href="https://www.instagram.com/saposte.iloilo">Instagram ↗</a><a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook ↗</a></p>
+            <div class="site-footer-meta">
+                <p>© 2026 Sa Poste Café. All rights reserved.</p>
+                <p><a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook</a> · <a href="https://www.instagram.com/saposte.iloilo">Instagram</a></p>
+            </div>
         </div>
     </footer>
 

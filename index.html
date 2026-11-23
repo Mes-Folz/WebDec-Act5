@@ -3,159 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sa Poste Cafe | Home</title>
+    <meta name="theme-color" content="#FAF4EA">
+    <title>Sa Poste Café | Good Coffee. Better Moments.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/navigation.css">
+    <script src="./js/script.js" defer></script>
 </head>
-    <body>
-        <header class="header">
-            <div class="header-container">
-                <a class="saposte-logo" href="index.html">
-                    <img src="./Images/SaPosteCafeLogo.jpg" alt="Sa Poste Cafe Logo">
-                    <span class="saposte-logo-text">Sa Poste Cafe</span>
-                </a>
-
-                <nav class="navbar">
-                    <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
+<body class="home-page">
+    <header class="site-header home-site-header">
+        <div class="site-header-inner">
+            <a class="site-brand" href="index.html" aria-label="Sa Poste Café home">
+                <img src="./Images/SaPosteCafeLogo.jpg" alt="">
+                <span class="site-brand-copy"><strong>Sa Poste Café</strong><small>Neighborhood Coffee &amp; Company</small></span>
+            </a>
+            <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu">
+                <span class="site-menu-label">Menu</span><span aria-hidden="true">☰</span>
+            </button>
+            <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+                <ul class="site-nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="site-header-actions">
+                <button class="site-theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">☾</span></button>
+                <a href="order.html">Order Now</a>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
+    <main>
+        <section class="home-hero" aria-labelledby="home-title">
+            <img class="home-hero-background" src="./Images/gallery1.jpeg" alt="">
+            <div class="home-hero-inner">
+                <div class="home-hero-copy">
+                    <p class="home-eyebrow">Sa Poste Café · Iloilo</p>
+                    <h1 id="home-title">Good Coffee.<br>Better Moments.</h1>
+                    <p>Coffee, shakes, and snacks for the little moments that make your day.</p>
+                    <div class="home-hero-actions">
+                        <a class="home-button home-button-primary" href="order.html">Order Now</a>
+                        <a class="home-button home-button-outline" href="products.html">View Menu</a>
+                    </div>
+                    <div class="home-hero-facts" aria-label="Sa Poste Café Jaro information">
+                        <div><span>Find us</span><strong>Jaro, Iloilo City</strong></div>
+                        <div><span>Open daily</span><strong>10:00 AM – 2:00 AM</strong></div>
+                    </div>
+                </div>
 
-            <div class="sidebar-layout">
-                <input type="checkbox" id="toggle-sidebar" checked>
-
-                <aside class="sidebar-wrapper">
-                    <h2><span>Sa Poste Cafe </span><label for="toggle-sidebar">☰</label></h2>
-
-                    <ul>    
-                        <li><a href="#sidebar-product">Recommendations</a></li>
-                        <li><a href="#sidebar-story">Background</a></li>
-                        <li><a href="products.html">Order</a></li>
-                        <li><a href="#sidebar-story">Socials</a></li>
-                    </ul>
-
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-
-                </aside>
-                <label class="sidebar-toggle" for="toggle-sidebar">☰</label>
+                <div class="home-hero-showcase" aria-label="Sa Poste Café favorites">
+                    <figure class="home-drink-card home-drink-main">
+                        <img src="./Images/iced-coffee.jpeg" alt="Sa Poste iced coffee">
+                        <figcaption><span>Sa Poste Iced Coffee</span><strong>₱99</strong></figcaption>
+                    </figure>
+                    <figure class="home-drink-card home-drink-side home-drink-yogurt">
+                        <img src="./Images/BananicedYogurt.jfif" alt="Banana iced yogurt">
+                    </figure>
+                    <figure class="home-drink-card home-drink-side home-drink-frappe">
+                        <img src="./Images/strawberry-frappe.jpg" alt="Strawberry frappe">
+                    </figure>
+                    <span class="home-showcase-sticker" aria-hidden="true">Made for<br>your moment</span>
+                </div>
             </div>
+        </section>
 
-            <section class="main-banner">
-                <img class="main-banner-image" src="./Images/SaPosteBanner.jpg" alt="Sa Poste Cafe">
-            </section>
-
-
-            <section class="section-dimensions" id="sidebar-product">
-                <div class="wrap fun-fact">
+        <section class="home-picks" id="home-picks" aria-labelledby="home-picks-title">
+            <div class="home-section-inner">
+                <div class="home-section-heading">
                     <div>
-                        <h2>Recent Hot Picks!</h2>
-                        <p>Check our Top Sellers! Order at the nearest branch or contact us and inquire for services like catering for special events!</p>
-
-                        <div class="menu-grid">
-                            <div class="menu-card">
-                                <img src="./Images/iced-coffee.jpeg" alt="Sa Poste Iced Coffee">
-                                    <div class="menu-card-info">
-                                        <div class="menu-card-title">
-                                            <span>Sa Poste Iced Coffee</span>
-                                            <span class="menu-card-price">₱99</span>
-                                        </div>
-                                        <p class="menu-card-desc">Our house coffee blend served over ice — sweetened to your preference, hot or cold.</p>
-                                    </div>
-                                </div>
-
-                                <div class="menu-card">
-                                    <img src="./Images/BananicedYogurt.jfif" alt="Banana Iced Yogurt">
-                                        <div class="menu-card-info">
-                                            <div class="menu-card-title">
-                                                <span>Banana Iced Yogurt</span>
-                                                <span class="menu-card-price">₱120</span>
-                                            </div>
-                                        <p class="menu-card-desc">A refreshing blend of real yogurt and banana, lightly sweetened and served over ice.</p>
-                                    </div>
-                                </div>
-
-                                <div class="menu-card">
-                                    <img src="./Images/strawberry-frappe.jpg" alt="Strawberry Frappe">
-                                        <div class="menu-card-info">
-                                            <div class="menu-card-title">
-                                                <span>Strawberry Frappe</span>
-                                                <span class="menu-card-price">₱135</span>
-                                            </div>
-                                        <p class="menu-card-desc">Blended strawberry and cream, topped with whipped cream — a cafe favorite on warm afternoons.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="form-buttons">
-                            <a class="button menu-button" href="products.html">Check our Menu</a>
-                            <a class="button contact-button" href="contact.html">Inquire Service</a>
-                        </div>
+                        <p class="home-eyebrow home-eyebrow-red">A LITTLE SOMETHING GOOD</p>
+                        <h2 id="home-picks-title">Recent Hot Picks!</h2>
+                        <p>Find a new favorite or come back to the one you already love.</p>
                     </div>
-            </section>
-
-
-            <section class="section-dimensions section-dimensions-tan" id="sidebar-story">
-                <div class="wrap-grid section2-grid">
-                <div class="wrap short-intro short-intro-grid">
-                    <div class="intro-pics">
-                        <img src="./Images/gallery4.jpeg" alt="Intro Pics">
-                        <img src="./Images/gallery3.jfif" alt="Intro Pics">
-                    </div>
-
-                    <div>
-                        <h2>Why Customers choose to dine in Sa Poste Cafe?</h2>
-                        <p>We keep our drinks affordable, our snacks generous, and our service quick — because a café should fit into your day, not slow it down. Every branch is run the same way: fresh ingredients, consistent recipes, and staff who remember your usual order.</p>
-                        <p>Sa Poste also runs three sister branches across Iloilo City — Molo, Pavia, and C1 — so if Jaro isn't near you, there's likely one close by.</p>
-
-                        <div class="form-buttons">
-                            <a class="button about-button" href="about.html">Read Story</a>
-                            <a class="button gallery-button" href="gallery.html">Check Photos</a>
-                        </div>
-                    </div>
+                    <a class="home-text-link" href="products.html">Explore the menu <span aria-hidden="true">↗</span></a>
                 </div>
 
-                <div class="contact-info-layout contact-home">
-                    <aside class="contact-info">
-                        <h3>Sa Poste Cafe - Jaro</h3>
-                        <dl>
-                            <dt>Address</dt>
-                            <dd>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</dd>
+                <div class="home-pick-grid">
+                    <article class="home-pick-card">
+                        <a class="home-pick-image" href="products.html" aria-label="See Sa Poste Iced Coffee on the menu">
+                            <img src="./Images/iced-coffee.jpeg" alt="">
+                        </a>
+                        <div class="home-pick-info">
+                            <p class="home-pick-category">COFFEE</p>
+                            <div class="home-pick-title"><h3>Sa Poste Iced Coffee</h3><strong>₱99</strong></div>
+                            <p>Our house coffee blend served over ice, sweetened to your preference.</p>
+                        </div>
+                    </article>
 
-                            <dt>Number</dt>
-                            <dd>0930 407 7838</dd>
+                    <article class="home-pick-card">
+                        <a class="home-pick-image" href="products.html" aria-label="See Banana Iced Yogurt on the menu">
+                            <img src="./Images/BananicedYogurt.jfif" alt="">
+                        </a>
+                        <div class="home-pick-info">
+                            <p class="home-pick-category">COOL &amp; CREAMY</p>
+                            <div class="home-pick-title"><h3>Banana Iced Yogurt</h3><strong>₱120</strong></div>
+                            <p>A refreshing blend of yogurt and banana, served over ice.</p>
+                        </div>
+                    </article>
 
-                            <dt>Email</dt>
-                            <dd><a href="mailto:saposte888@gmail.com">saposte888@gmail.com</a></dd>
-
-                            <dt>Opening & Closing Time</dt>
-                            <dd>Open daily from 10:00 AM to 2:00 AM</dd>
-                        </dl>
-
-                        <h3>Follow Our Pages</h3>
-                        <ul class="socials">
-                            <li><a href="https://www.instagram.com/saposte.iloilo?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="><img src="./Images/instagram.svg"></a></li>
-                            <li><a href="https://www.facebook.com/SaPostengapangabuhi/"><img src="./Images/facebook.svg"></a></li>
-                        </ul>
-                    </aside>
+                    <article class="home-pick-card">
+                        <a class="home-pick-image" href="products.html" aria-label="See Strawberry Frappe on the menu">
+                            <img src="./Images/strawberry-frappe.jpg" alt="">
+                        </a>
+                        <div class="home-pick-info">
+                            <p class="home-pick-category">A CAFÉ FAVORITE</p>
+                            <div class="home-pick-title"><h3>Strawberry Frappe</h3><strong>₱135</strong></div>
+                            <p>Blended strawberry and cream, topped with whipped cream.</p>
+                        </div>
+                    </article>
                 </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="wrap footer-container">
-                <p>2026 Sa Poste Cafe. All rights reserved.</p>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <section class="home-story" aria-labelledby="home-story-title">
+            <div class="home-story-inner">
+                <div class="home-story-photo">
+                    <img src="./Images/gallery2.jpeg" alt="Inside the Sa Poste Café Jaro location">
+                    <span>Sa Poste Café · Jaro</span>
+                </div>
+                <div class="home-story-copy">
+                    <p class="home-eyebrow">YOUR NEIGHBORHOOD CAFÉ</p>
+                    <h2 id="home-story-title">Why Customers Choose Sa Poste Café</h2>
+                    <p>Good drinks, snacks to share, and a welcoming place to take a break. Stop by for a quick pick-me-up or stay awhile with friends.</p>
+                    <div class="home-story-links">
+                        <a class="home-button home-button-primary" href="about.html">Our Story</a>
+                        <a class="home-button home-button-outline" href="gallery.html">See the Café</a>
+                    </div>
+                    <div class="home-contact-card">
+                        <h3>Visit us in Jaro</h3>
+                        <p>KL Building, Del Carmen Street, Barangay Javellana, Jaro, Iloilo City</p>
+                        <a href="tel:+639304077838">0930 407 7838</a>
+                        <a href="mailto:saposte888@gmail.com">saposte888@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-visit" aria-labelledby="home-visit-title">
+            <img src="./Images/SaPosteFrontPic.jpeg" alt="">
+            <div class="home-visit-content">
+                <p class="home-eyebrow">COME ON IN</p>
+                <h2 id="home-visit-title">Come for the cup.<br>Stay for the moment.</h2>
+                <p>We’re at Del Carmen Street in Jaro. We’d love to see you.</p>
+                <a class="home-button home-button-light" href="contact.html">Find Us <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <a class="site-footer-brand" href="index.html">Sa Poste Café</a>
+            <nav aria-label="Footer navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="order.html">Order</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="site-footer-meta">
+                <p>© 2026 Sa Poste Café. All rights reserved.</p>
+                <p><a href="https://www.facebook.com/SaPostengapangabuhi/">Facebook</a> · <a href="https://www.instagram.com/saposte.iloilo">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
