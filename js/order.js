@@ -1,18 +1,18 @@
 const drinks = [
-  { name: 'Sa Poste Iced Coffee', price: 99, detail: 'The house favorite' },
-  { name: 'Iced Americano*', price: 99, detail: 'Bold & easygoing' },
-  { name: 'Iced Latte*', price: 119, detail: 'Smooth & mellow' },
-  { name: 'Spanish Latte*', price: 129, detail: 'A little sweeter' }
+  { name: 'Signature Coffee Shaken', price: 199, detail: 'A House Signature' },
+  { name: 'Iced Americano*', price: 120, detail: 'Bold & easygoing' },
+  { name: 'Iced Latte*', price: 149, detail: 'Smooth & mellow' },
+  { name: 'Iced Spanish Latte*', price: 149, detail: 'A little sweeter' }
 ];
 const form = document.querySelector('#custom-form');
 const list = document.querySelector('#drink-list');
 const items = [];
 const menuProducts = {
-  'cheese-rolls': { name: 'Cheese Rolls (Box of 5)', price: 360, description: 'Soft, golden bread filled with rich, gooey cheese and brushed with buttery goodness.', image: 'Images/cheeserolls.jfif' },
-  ensaymada: { name: 'Ensaymada Ball', price: 65, description: 'A soft brioche roll topped with butter, sugar, and grated cheese.', image: 'Images/Ensaymada-balls.jpg' },
-  'banana-yogurt': { name: 'Banana Iced Yogurt', price: 120, description: 'A refreshing blend of real yogurt and banana, lightly sweetened and served over ice.', image: 'Images/BananicedYogurt.jfif' },
-  'strawberry-frappe': { name: 'Strawberry Frappe', price: 135, description: 'Blended strawberry and cream, topped with whipped cream.', image: 'Images/strawberry-frappe.jpg' },
-  'buko-peanut': { name: 'Buko-Peanut Shake', price: 140, description: 'Young coconut blended with roasted peanut cream.', image: 'Images/buko-peanutshake.jfif' }
+  'cheese-cake': { name: 'Cheese Cake', price: 200, description: 'A creamy, rich dessert made with soft cheese, a sweet filling, and a buttery crust.', image: 'Images/cheeserolls.jfif' },
+  'custard-cake': { name: 'Custard Cake', price: 165, description: 'A soft, fluffy cake topped with smooth, sweet, and creamy caramel custard.', image: 'Images/Ensaymada-balls.jpg' },
+  'banana-yogurt': { name: 'Banana Iced Yogurt', price: 210, description: 'A refreshing blend of real yogurt and banana, lightly sweetened and served over ice.', image: 'Images/BananicedYogurt.jfif' },
+  'signature-frappe': { name: 'Signature Frappe', price: 220, description: 'Blended ingredient and cream, topped with whipped cream.', image: 'Images/strawberry-frappe.jpg' },
+  'buko-peanut': { name: 'Buko-Peanut Shake', price: 230, description: 'Young coconut blended with roasted peanut cream.', image: 'Images/buko-peanutshake.jfif' }
 };
 let drink = drinks[0];
 let quantity = 1;
